@@ -1,0 +1,42 @@
+*
+{
+    color: red;
+}
+#main-text
+{
+    color: #333333;
+    font-size: 26px;
+}
+
+.decor-text
+{
+    text-transform: uppercase;
+}
+
+div.decor-text
+{
+    color: olive;
+    background-color: cadetblue;
+}
+
+ul li
+{
+    margin-bottom: 20px;
+    color: grey;
+}
+
+ul li a
+{
+    color: grey;
+}
+
+ul li.active
+{
+    font-size: 40px;
+}
+
+ul li.active + li
+{
+    margin-top: 60px;
+    font-style: italic;
+}
