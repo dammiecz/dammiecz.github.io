@@ -1,0 +1,217 @@
+body, html
+{
+    height: 100%
+}
+
+h1
+{
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+}
+
+#container
+{
+    margin-left: auto;
+    margin-right: auto;  
+    background-image: url(../img/organizer/back.png);
+    height: 100%;
+}
+
+#activities
+{
+    background-color: #6fb6ff;
+    width: 480px;
+    height: 60px; 
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    border: 3px solid #0066ff;  
+    border-radius: 15px; 
+    /*padding-top: 3px;*/
+    padding: 10px;      
+    margin-bottom: 10px;    
+}
+
+#day
+{
+    background-color: #6fb6ff;
+    width: 300px;
+    height: 90px;
+    margin-left: auto;
+    margin-right: auto;
+    border: black;
+    border: 3px solid #0066ff;     
+    border-radius: 15px;     
+}
+
+.img_cont
+{
+       
+    background-color: white;
+    border: 1px solid black;   
+    width: 40px;
+    height: 40px;
+    opacity: 0.7; 
+    border-radius: 10px;     
+    padding: 3px;
+    margin: 4px;
+}
+
+.img_cont:hover 
+{
+    opacity: 1;
+    cursor: grab; 
+}
+
+.img_cont:active
+{
+    opacity: 1;
+    cursor: grabbing;
+    border-color: #4d94ff;
+    border-width: 3px;    
+}
+
+#swim
+{        
+}
+
+#run
+{    
+    
+           
+}
+
+#football
+{    
+    
+            
+}
+
+#gym
+{    
+    
+            
+}
+
+#calistenic
+{    
+    
+             
+}
+
+#bicycle
+{    
+    
+             
+}
+
+#combat
+{    
+   
+             
+}
+
+#list
+{
+    list-style-type: none;    
+    padding-left: 0px;
+    margin: 0px; 
+}
+
+li
+{    
+    display: block;
+    float: left;
+    width: 56px;
+    height: 56px;
+    border: 1px solid #1a53ff;
+    border-radius: 15px;
+    margin: 1px;
+    z-index: -1;
+    text-align: center;
+    
+}
+
+.day
+{
+   text-align: center; 
+   font-size: 30px;
+   width: 50px;
+   height: 35px;
+   border: 3px solid #0066ff;
+   border-radius: 10px;
+   background-color: #6fb6ff;   
+}
+
+.day:hover
+{
+    border-color: #4d94ff;
+    border-width: 3px; 
+    background-color: #8fd8ff; 
+    cursor: pointer;
+}
+
+.day-nr
+{
+   text-align: center; 
+   font-size: 30px;
+   width: 50px;
+   height: 35px;
+   border: 3px solid #0066ff;
+   border-radius: 10px;
+   background-color: #2a82aa;
+}
+
+.n
+{
+   text-align: center; 
+   font-size: 30px;
+   width: 50px;
+   height: 35px;
+   border: 3px solid #0066ff;
+   border-radius: 10px;
+   background-color: red;
+}
+
+#date
+{
+    margin-left: auto;
+    margin-right: auto;    
+    width: 400px;
+}
+
+#calendar
+{
+    margin-bottom: 10px;
+}
+
+#insert
+{
+    z-index: -1;
+}
+
+.tooltip-text 
+{
+    visibility: hidden;
+    width: 50px;
+    background-color: #2e2e1f;
+    text-align: center;
+    border-radius: 10px;
+    padding: 3px;
+    position: relative;
+    z-index: 1;    
+    opacity: 0;
+    transition: opacity 0.5s;  
+    
+}
+
+.tooltip-text::after
+{
+    content:"";
+    position: relative;
+    
+   
+  
+}
+

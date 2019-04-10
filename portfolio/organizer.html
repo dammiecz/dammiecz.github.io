@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+
+<html>
+    
+    <head>
+        <title>Calendar Activities</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <link rel="stylesheet" href="css/organizer.css" type="text/css"/>
+        
+        <script src="jquery-3.3.1.min.js"></script>  
+        
+    </head>
+    
+    <body>
+        
+        <div id="container">
+            <h1>Kalendarz</h1>
+            
+            <div id="date"> 
+                <table id="calendar">
+                    <tr><td class="day-nr">Pn</td><td class="day-nr">Wt</td><td class="day-nr">Śr</td><td class="day-nr">Cz</td><td class="day-nr">Pt</td><td class="day-nr">So</td><td class="day-nr">N</td></tr>
+                    <tr><td class="day">1</td><td class="day">2</td><td class="day">3</td><td class="day">4</td><td class="day">5</td><td class="day">6</td><td class="n">7</td></tr>
+                    <tr><td class="day">8</td><td class="day">9</td><td class="day">10</td><td class="day">11</td><td class="day">12</td><td class="day">13</td><td class="n">14</td></tr>
+                    <tr><td class="day">15</td><td class="day">16</td><td class="day">17</td><td class="day">18</td><td class="day">19</td><td class="day">20</td><td class="n">21</td></tr>
+                    <tr><td class="day">22</td><td class="day">23</td><td class="day">24</td><td class="day">25</td><td class="day">26</td><td class="day">27</td><td class="n">28</td></tr>
+                    <tr><td class="day">29</td><td class="day">30</td><td class="day">31</td><td class="day"></td><td class="day"></td><td class="day"></td><td class="n"></td></tr>                    
+                </table>                
+            </div>
+            <div id="activities"> 
+                <ul id="list">                    
+                    <li ondrop="getData(event)" ondragover="allowToDrop(event)"><div><span class="tooltip-text">Bieganie</span><img class="img_cont" id="swim"         src="img/organizer/1.png" draggable="true" ondragstart="setData(event)" ondrop="getData(event)" ondragover="allowToDrop(event)" alt="swim"></div></li>
+                        <li ondrop="getData(event)" ondragover="allowToDrop(event)"><img class="img_cont" id="run"          src="img/organizer/2.png" draggable="true" ondragstart="setData(event)" ondrop="getData(event)" ondragover="allowToDrop(event)" alt="run"></li>
+                        <li ondrop="getData(event)" ondragover="allowToDrop(event)"><img class="img_cont" id="football"     src="img/organizer/3.png" draggable="true" ondragstart="setData(event)" ondrop="getData(event)" ondragover="allowToDrop(event)" alt="football"></li>
+                        <li ondrop="getData(event)" ondragover="allowToDrop(event)"><img class="img_cont" id="gym"          src="img/organizer/4.png" draggable="true" ondragstart="setData(event)" ondrop="getData(event)" ondragover="allowToDrop(event)" alt="gym"></li>            
+                        <li ondrop="getData(event)" ondragover="allowToDrop(event)"><img class="img_cont" id="calistenic"   src="img/organizer/5.png" draggable="true" ondragstart="setData(event)" ondrop="getData(event)" ondragover="allowToDrop(event)" alt="calistenic"></li> 
+                        <li ondrop="getData(event)" ondragover="allowToDrop(event)"><img class="img_cont" id="bicycle"      src="img/organizer/6.png" draggable="true" ondragstart="setData(event)" ondrop="getData(event)" ondragover="allowToDrop(event)" alt="bicycle"></li>  
+                        <li ondrop="getData(event)" ondragover="allowToDrop(event)"><img class="img_cont" id="combat"       src="img/organizer/7.png" draggable="true" ondragstart="setData(event)" ondrop="getData(event)" ondragover="allowToDrop(event)" alt="combat"></li>
+                        <li ondrop="getData(event)" ondragover="allowToDrop(event)"><img class="img_cont" id="other"        src="img/organizer/8.png" draggable="true" ondragstart="setData(event)" ondrop="getData(event)" ondragover="allowToDrop(event)" alt="other"></li>
+                </ul>
+            </div>
+            
+            <div id="day" ondrop="getData(event)" ondragover="allowToDrop(event)"></div>                
+                
+        </div>                       
+       
+<!--        <span class="tooltip-text">Siłownia</span>
+            <span class="tooltip-text">Pływanie</span>
+            <span class="tooltip-text">Combat</span>
+            <span class="tooltip-text">Kalistenika</span>
+            <span class="tooltip-text">Jazda rowerem</span>
+            <span class="tooltip-text">Piłka nożna</span>
+            <span class="tooltip-text">Inny sport</span>-->
+         <script type="text/javascript">     
+             
+            var date = new Date(y,m-1,d);
+            
+
+            var y2016 = [366];
+            var y2017 = [365];
+            var y2018 = [365];
+            var y2019 = [365];
+             
+            // $(function() {$('#swim').draggable();});
+            
+//            dragElement(document.getElementById("swim"));
+//            dragElement(document.getElementById("run"));
+//            dragElement(document.getElementById("football"));
+//            dragElement(document.getElementById("gym"));
+//            dragElement(document.getElementById("calistenic"));
+//            dragElement(document.getElementById("bicycle"));
+//            dragElement(document.getElementById("combat"));
+//            
+//            function dragElement(elmnt)
+//            {
+//                var posX, posY, divX, divY, dX, dY, X, Y;
+//                                
+//                  //elmnt.onmousedown = dragMouseDown;              
+//
+//                function dragMouseDown(e) {
+//                  //e = e || window.event;
+//                  //e.preventDefault();
+//                  // get the mouse cursor position at startup:
+//                  //posX = e.clientX;
+//                  //posY = e.clientY;
+//                  //divX = elmnt.style.left;
+//                  //divY = elmnt.style.top;
+//                  //X = divX.replace('px','');
+//                  //Y = divY.replace('px','');
+//                  //dX = posX - X;
+//                  //dY = posY - Y;     
+//                  
+//                  //alert(posX);
+//                  //alert(dX);
+//                  
+//                  document.onmouseup = closeDragElement;
+//                  // call a function whenever the cursor moves:
+//                  document.onmousemove = elementDrag;
+//                }
+//
+//                function elementDrag(e) {
+//                  //e = e || window.event;
+//                  //e.preventDefault();
+//                  // calculate the new cursor position:                  
+//                  posX = e.clientX;
+//                  posY = e.clientY;
+//                  // set the element's new position:
+//                  elmnt.style.left = posX  + "px";
+//                  elmnt.style.top = posY  + "px";
+//                }
+//
+//                function closeDragElement() {
+//                  /* stop moving when mouse button is released:*/
+//                  document.onmouseup = null;
+//                  document.onmousemove = null;
+//                }
+//              }
+            
+            function writeFile()
+            {
+                var str;
+                var file = fopen('2016.txt',3);
+                if(file !== -1)
+                {
+                    str = data;
+                    fwrite(file, str);
+                    fclose(file);
+                }                
+            }
+            
+            function readFile()
+            {
+                var str;
+                var file = fopen('2015.txt',0);
+                if(file !== -1)
+                {
+                    str = data;
+                    fread(file, str);
+                    fclose(file);
+                }
+                
+            }
+            
+            function setData(e)
+            {
+                e.dataTransfer.setData("text",e.target.id);   
+            }  
+    
+            function getData(e)
+            {
+                var data = e.dataTransfer.getData("text");  
+                e.target.appendChild(document.getElementById(data));
+                
+                var str;
+                var file = fopen('2016.txt',3);
+                if(file !== -1)
+                {
+                    str = data;
+                    fwrite(file, str);
+                    fclose(file);
+                }    
+            }
+            
+            function getDataR(e)
+            {               
+                var data = e.dataTransfer.getData("text");
+                e.target.appendChild(document.getElementById(data));
+                
+                $(data).removeClass('img_contA');
+                $(data).addClass('img_cont');
+            }
+            
+            function allowToDrop(e)
+            {
+                e.preventDefault();
+            }                       
+            
+        </script>
+        
+    </body>
+    
+</html>

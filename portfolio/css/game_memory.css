@@ -1,0 +1,155 @@
+body
+{
+    background-color: dimgrey;
+    color: #ffffff;    
+}
+
+#title
+{
+    width: 100vw;
+    font-size: 50px;   
+    margin-left: auto;
+    margin-right: auto;   
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Charm', cursive;
+}
+
+#plansza
+{
+    opacity: .15;
+    filter: alpha(opacity = 0);
+    -moz-opacity: 0.0;
+    float: left;
+}
+
+#wynik
+{
+    text-align: center;
+    font-size: 30px;
+    color: white;   
+    font-family: 'Inconsolata', monospace;
+}
+
+.reset
+{
+    text-align: center;
+    font-size: 35px; 
+    color: activecaption;
+}
+
+.reset:hover
+{
+    color: orange;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+
+.end
+{
+    font-size: 20px;
+    text-align: justify;    
+}
+
+.card
+{
+    width:60px;
+    height: 60px;
+    margin: 5px;
+    border-style: solid;
+    border-color: black;
+    float: left;  
+    background-image: url("../img/game_memory/reverse.png");
+    filter: brightness(70%);    
+    display: none;
+    transition: all .5s, easy-in-out;
+    cursor: pointer;
+    /*display: none;  
+    /*animation-name: show;
+    animation-timing-function:  ease;
+    animation-duration: 0.5s;*/
+    
+}
+
+.card:hover
+{
+    cursor: pointer;
+    filter: brightness(100%);
+    border-color: goldenrod;  
+    transition: all .5s, easy-in-out;
+}
+
+.cardA
+{
+    width:60px;
+    height: 60px;
+    margin: 5px;
+    border-style: solid;
+    border-color: black;
+    float:left;  
+    background-image: url("img/game_memory/reverse.png");
+    filter: brightness(100%);
+    transition: all .5s, easy-in-out;
+    cursor: default;
+    pointer-events: none;
+}
+
+.cardA:hover
+{
+    cursor: default;
+    filter: brightness(100%);          
+}
+
+.cardD
+{
+    width:60px;
+    height: 60px;
+    margin: 5px;
+    border-style: solid;
+    border-color: black;
+    float:left; 
+    opacity: 0;
+    transition: all .5s, easy-in-out;
+    cursor: default;
+    pointer-events: none;
+    display: none; 
+}
+
+#board
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;   
+}
+
+.option
+{
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+    align-content: center;
+}
+
+#contain
+{
+    margin-right: auto;
+    margin-left: auto;
+   
+}
+
+#score
+{
+    text-align: center;
+}
+
+#turn
+{
+    text-align: center;
+}
+
+h1
+{
+    text-align: center;
+}
+
+    

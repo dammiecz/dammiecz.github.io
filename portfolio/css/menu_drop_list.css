@@ -1,0 +1,62 @@
+.section
+{
+    background-color: #b38600;
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    text-align: left;
+    padding: 10px;    
+    transition: background-color 0.5s ease;
+    border: none;   
+    outline: none;
+}
+
+.section::after
+{
+    content: '\002B'; 
+    float: right;
+    margin-right: 10px;
+}
+
+.section:hover
+{
+    background-color: #e6ac00;
+    cursor: pointer;
+}
+
+.section-active
+{
+    background-color: #e6ac00;
+}
+
+.section-active::after
+{
+    content: '\2212'; 
+}
+
+.content
+{
+    display: none;
+    width: 100%; 
+    opacity: 0.5;    
+    background-color: #e6ac00;    
+}
+
+@keyframes fadeIn
+{
+    from {opacity: 0;}
+    to   {opacity: 1;}
+}
+
+.content-active
+{
+    display: inline-block;  
+    opacity: 1;
+    animation: fadeIn 0.5s ease-in-out;    
+}
+
+iframe
+{
+    transition: all 0.5s;  
+    width: 100%;
+}

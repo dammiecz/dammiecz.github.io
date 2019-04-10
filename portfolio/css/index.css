@@ -1,0 +1,204 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+header
+{
+    height: 200px;
+    position: sticky;
+    top: 0;   
+    background-image: url("../img/index/logo-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;     
+}
+
+h1
+{    
+    color: #fff;
+}
+
+h3
+{
+    text-align: center;
+    padding: 10px;    
+}
+
+#logo-brand
+{    
+    width: 100px;
+    height: 100px;
+    background-image: url("../img/index/logo.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;    
+    z-index: 1;    
+}
+
+nav
+{
+    position: sticky;
+    top: 200px; 
+}
+
+ul
+{
+    background-color: #d7ac1e;
+    list-style-type: none;
+    font-size: 20px;    
+    text-align: center;
+}
+
+ul li
+{
+    display: inline-block; 
+    transition: 0.5s ease;
+    padding: 10px;
+}
+
+ul li:hover
+{    
+    background-color: #f9cc3f;
+    cursor: pointer;
+}
+
+ul li a
+{
+    text-decoration: none;    
+    color: black;
+}
+
+section p
+{
+    padding: 3px;
+    width: 400px;
+    text-align: justify;  
+    margin-right: auto;
+    margin-left: auto;
+}
+
+section
+{
+    background-color: #d1d1e0;     
+}
+
+#popup-form
+{
+    margin-left: 0;
+    margin-right: 0;
+    background-color: black;  
+    position: fixed;
+    top: 0px;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;    
+    display: none;
+}
+
+form
+{
+    width: 230px;
+    height: 380px;
+    background-color: #888888;    
+    border: solid 1px black;
+    position: relative; 
+    margin-left: auto;
+    margin-right: auto;    
+}
+
+form input, textarea
+{
+    display: block;
+    margin-top: 10px;
+    margin-left: 10px;
+    background-color: #696969;
+    width: 200px;
+    color: #fff;
+}
+
+textarea
+{
+    width: 200px;
+    height: 50px;
+    resize: none;
+}
+
+label
+{
+    font-size: 12px;
+    color: #fff;  
+    margin-left: 10px;
+}
+
+::placeholder, form h3
+{
+    color: #fff;
+}
+
+input[type="checkbox"]
+{
+    display: inline-block;
+    width: 10px;
+    margin: 2px;
+}
+
+label[for="message"] + label
+{
+    display: block;
+    margin-top: 10px;
+}
+
+#contact
+{
+    position: relative;
+}
+
+#popup-form-btn
+{
+    position: absolute;
+    top: 55%;
+    left: 50%;
+}
+
+footer
+{
+    background-color: #d7ac1e; 
+}
+
+footer p
+{
+    text-align: center;
+    padding: 10px;
+    font-style: italic;    
+    font-size: 12px;
+}
+
+button[type="submit"]
+{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 20px;
+    padding: 5px;
+}
+
+button[type="submit"]:hover
+{
+    cursor: pointer;
+    opacity: 0.7;
+}
+
+#exit
+{
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+#exit:hover
+{
+    cursor: pointer;
+    opacity: 0.7;
+}

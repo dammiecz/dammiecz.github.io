@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Memory</title>
+        <meta charset="UTF-8">
+        
+        <link rel="stylesheet" href="css/game_memory.css" type="text/css"/>
+        
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Charm|Timmana" rel="stylesheet">        
+              
+         <script type="text/javascript" src="script/jquery-3.3.1.min.js"></script>  
+        
+    </head>   
+    
+    <body>
+        
+        <div id="imagine"></div>
+        <div id="contain">
+            <h1>Memory - pamięć absolutna</h1>
+            <div id="board">
+                <form>
+                    <label>Wybierz rozmiar planszy</label>
+                    <select id="option">
+                        <option value="2" id="o2">2 x 2</option>               
+                        <option value="4" id="o4">4 x 4</option>               
+                        <option value="6" id="o6">6 x 6</option>                
+                        <option value="8" id="o8">8 x 8</option>                
+                        <option value="10" id="o10">10 x 10</option>
+                    </select> 
+                    <button type="submit" onclick="get()">OK</button>
+                </form> 
+            </div>
+            
+            <p id="score"></p><p id="turn"></p>             
+           
+            <script type="text/javascript" src="script/game_memory.js"></script>
+            
+        </div>
+    </body>
+</html>            

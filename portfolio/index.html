@@ -1,0 +1,115 @@
+<!doctype html>
+<html lang="pl">
+    <head>
+        <meta charset="UTF-8">
+        <title>DM_Studio</title>
+        <link rel="stylesheet" href="css/index.css">
+   
+<!--**--><link rel="stylesheet" href="css/menu_drop_list.css"> 
+
+    </head>
+    <body>
+       
+        <header>
+            <h1>DM_Studio</h1>
+            <div id="logo-brand"></div>
+        </header>
+        <nav>
+            <ul>                
+                <li><a href="#about-me">O mnie</a></li>                    
+                <li><a href="#skills">Technologie</a></li>                    
+                <li><a href="#portfolio">Projekty</a></li>
+                <li><a href="#contact">Kontakt</a></li>                 
+            </ul>            
+        </nav>   
+        
+        <section id="about-me">
+            <h3>O mnie</h3>
+            <p>Witaj na mojej stronie. Cieszę się,że tu trafileś. Mam na imię Damian. Jestem front-end developerem.</p> 
+            <p>Mogę stworzyć dla Ciebie funkcjonalną stronę, dostosowaną do Twoich indywidualnych wymogów i specyfikacji.</p>
+            <p>Nie zapominam jednak o jej wyglądzie i szablonie, który jest również bardzo ważny. Moim celem jest zrealizowanie Twojej wizji wymarzonej stronie WWW.</p>
+            <p>Ponadto dolożę wszelkich starań, żeby z Twojej strony internauci szybko nie uciekali, odstraszeni jej kolorystyką, ukladem czy brakiem funkcjonalności.</p>
+        </section>
+        
+        <section id="skills">
+            <h3>Technologie</h3>
+            <p>Tworzenie stron internetowych opieram o HTML5/CSS3 i JavaScript.</p>
+            <p>Nie są mi obce technologie takie jak: jQuery, AJAX, RWD, React.js, Node.js</p>
+            <p>Ponadto mialem styczność z językiem Java, jednak pragnę zaznaczyć, że nie jest to mój "konik"</p>
+        </section>
+        
+<!--    **    -->
+        <section id="portfolio">
+            <h3>Projekty</h3>
+            <nav>
+                <button class="section" onclick="showOff(0)">Projekt 1.</button>
+                <div class="content">
+                    <iframe src="game_szubienica.html">Error!</iframe>
+                </div>
+                <button class="section" onclick="showOff(1)">Projekt 2.</button>
+                <div class="content">
+                    <iframe src="game_memory.html"></iframe>
+                </div>
+                <button class="section" onclick="showOff(2)">Projekt 3.</button>
+                <div class="content">
+                    <iframe src="game_wheel_of_fortunel.html"></iframe>
+                </div>
+                <button class="section" onclick="showOff(3)">Projekt 4.</button>
+                <div class="content">
+                    <iframe src="organizer.html"></iframe>
+                </div>
+            </nav>     
+        </section>
+<!--    **    -->
+        
+        <section id="contact">
+            <h3>Kontakt</h3>
+            <address>
+                <p>Damian Miecznikowski</p>
+                <p>e-mail: <a href="mailto:e-mail@e-mail.pl">e-mail@e-mail.pl</a></p>
+                <p>tel: (+48) 6000 000 00</p>                
+            </address>
+            <button id="popup-form-btn" onclick="showRequestForm()">Zlóż zapytanie</button>
+        </section>
+        
+        <footer>
+            <p>Wszystkie prawa zastrzeżone @2019 DM_Studio</p>
+        </footer>
+        
+<!--        formularz start-->        
+        <aside id="popup-form">
+            <form action="https:\\formspree.io\mieczykdn@o2.pl" method="POST">
+                <h3>Zapytanie ofertowe</h3>
+                <input id="name" type="text" placeholder="Podaj swoje imię" required>            
+                <label for="name">*pole wymagane</label>
+                <input id="email" type="email" placeholder="Podaj swój e-mail do kontaktu" required>
+                <label for="email">*pole wymagane</label>
+                <input id="phone" type="tel" placeholder="Podaj swój nr telefonu">
+                <label for="phone">*pole niewymagane</label>
+                <textarea id="message" placeholder="treść wiadomości..." required></textarea>
+                <label for="message">*pole wymagane</label>
+                <label><input id="agreemnet" type="checkbox" required>Wyrażam zgodę na przetwarzanie danych podanych w formularzu</label>
+                <button type="submit">Wyślij</button> 
+                <button id="exit" onclick="hideRequestForm()">&#215</button>
+             </form>
+        </aside>  
+
+        <script type="text/javascript" src="script/menu_drop_list.js"></script>    
+
+        <script type="text/javascript">
+            
+            function showRequestForm()
+            {
+                document.getElementById("popup-form").style.display = "block";
+            }
+            
+            function hideRequestForm()
+            {
+                document.getElementById("popup-form").style.display = "none";
+            }
+            
+        </script>
+  <!--        formularz koniec-->   
+  
+    </body>
+</html>
