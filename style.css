@@ -1,0 +1,79 @@
+header 
+{
+    background-image: url("obrazy/man-1.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% 50%;
+    width: 100%;
+    height: 129.5vw; /* wyliczone z proporcji obrazka (1600-1128)/1600*/
+    text-align: center;
+    text-transform: uppercase;  
+    border: solid 1px black;
+}   
+
+header h1
+{    
+    position: relative;
+    top: 65vw;
+    margin-top: 5vw;
+    font-size: 8vw;    
+}
+
+header h1 span
+{
+    content:"I am the best";
+    font-size: 5vw;        
+    display: block;
+    margin-bottom: 3vw;
+}
+
+
+@media all and (min-width: 993px)
+{
+    header
+    {
+        background-image: url("obrazy/man-2.jpg");
+        background-size: 100% 70%;         
+        height: 96.625vw; 
+        text-align: left;
+    }
+    
+    header h1
+    {
+        top: 11vw;
+        left: 55vw;
+        color: #fff;
+        display: inline-block;
+        font-size: 3vw;   
+        margin: 0;
+    }
+    
+    header h1 span
+    {
+        font-size: 2vw; 
+    }
+}
+
+@media all and (min-width: 1171px)
+{
+    header
+    {
+        background-image: url("obrazy/man-1.jpg");
+        background-size: 100% 100%;
+        height: 70.5vw;          
+    }
+    
+    header h1
+    {        
+        top: 35.25vw;
+        left: 5vw; 
+        font-size: 3vw;   
+        margin: 0;
+    }
+    
+    header h1 span
+    {
+        font-size: 2vw; 
+    }
+}
+
+
