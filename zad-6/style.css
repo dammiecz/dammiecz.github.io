@@ -1,0 +1,43 @@
+*{
+    margin: 0;      
+}
+
+div#container{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: green;
+}
+
+div#container div.square{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+}
+
+div#container div.square div.circle{
+    position: absolute;
+    width: 50%;
+    height: 50%;
+    background-color: blue;
+    border-radius: 50%;
+    right: 0;
+    bottom: 0;
+}
+
+div#container div.square:nth-child(2){
+    right: 0;
+    transform: rotate(90deg);
+}
+
+div#container div.square:nth-child(3){
+    bottom: 0;
+    transform: rotate(270deg);
+}
+
+div#container div.square:nth-child(4){
+    right: 0;
+    bottom: 0;
+    transform: rotate(180deg);
+}
