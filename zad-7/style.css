@@ -1,0 +1,76 @@
+div
+{
+    position: relative;
+    height: 360px;
+    width: 660px;
+    background-image: url('7-jezioro.jpg');
+    background-size: 650px 350px; 
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50px; 
+}
+
+div:hover::before
+{
+    content:'';
+    height: 0;
+    width: 660px;  
+    position: absolute; 
+    left: -5px;
+    top: -5px;
+    border-top: solid 5px black;
+    border-right: solid 5px black;
+    border-left: solid 5px black;  
+    animation: showBorder 3s ease;
+    animation-fill-mode: forwards;
+}
+
+div:hover::after
+{
+    content:'';
+    height: 0;
+    width: 660px;  
+    position: absolute; 
+    left: -5px;
+    bottom: -5px;
+    border-bottom: solid 5px black;
+    border-right: solid 5px black;
+    border-left: solid 5px black; 
+    animation: showBorder 3s ease;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showBorder
+{
+    0% {height: 0;}
+    100% {height: 180px;}
+}
+
+@keyframes showTitle
+{
+    0% {height: 0; font-size: 0;}
+    100% {height: 60px; font-size: 50px;}
+}
+
+div p
+{    
+    position: absolute;   
+    top: 150px;
+    width: 660px;
+    height: 0;    
+    color: #fff;
+    background-color: #000;
+    text-align: center;
+    text-transform: uppercase; 
+    font-size: 0;
+    opacity: 0.7;
+}
+
+div:hover p
+{          
+    animation: showTitle 3s ease;
+    animation-fill-mode: forwards;
+}
