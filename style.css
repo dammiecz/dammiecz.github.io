@@ -1,10 +1,16 @@
+*
+{
+    margin:0;
+    padding:0
+}
+
 header 
 {
     background-image: url("obrazy/man-1.jpg");
     background-repeat: no-repeat;
-    background-size: 100% 50%;
+    background-size: cover;
     width: 100%;
-    height: 129.5vw; /* wyliczone z proporcji obrazka (1600-1128)/1600*/
+    height: 50vh; 
     text-align: center;
     text-transform: uppercase;  
     border: solid 1px black;
@@ -32,8 +38,8 @@ header h1 span
     header
     {
         background-image: url("obrazy/man-2.jpg");
-        background-size: 100% 70%;         
-        height: 96.625vw; 
+        background-size: cover;         
+        height: 100vh; 
         text-align: left;
     }
     
@@ -58,8 +64,8 @@ header h1 span
     header
     {
         background-image: url("obrazy/man-1.jpg");
-        background-size: 100% 100%;
-        height: 70.5vw;          
+        background-size: cover;
+        height: 70vh;          
     }
     
     header h1
