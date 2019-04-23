@@ -19,7 +19,7 @@ header
 header h1
 {    
     position: relative;
-    top: 65vw;
+    top: 65vh;
     margin-top: 5vw;
     font-size: 8vw;    
 }
@@ -70,7 +70,7 @@ header h1 span
     
     header h1
     {        
-        top: 35.25vw;
+        top: 50vh;
         left: 5vw; 
         font-size: 3vw;   
         margin: 0;
