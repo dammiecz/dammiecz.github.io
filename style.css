@@ -39,7 +39,7 @@ header h1 span
     {
         background-image: url("obrazy/man-2.jpg");
         background-size: cover;         
-        height: 100vh; 
+        height: 70vh; 
         text-align: left;
     }
     
@@ -65,7 +65,7 @@ header h1 span
     {
         background-image: url("obrazy/man-1.jpg");
         background-size: cover;
-        height: 70vh;          
+        height: 100     vh;          
     }
     
     header h1
