@@ -6,6 +6,9 @@ const obliczWynagrodzeniePracownika = () =>
     let stawkaZaGodzine = document.getElementsByClassName('stawka'); 
     let wyplata = document.getElementsByClassName('wyplata');
     
+    let najlepsi = document.getElementById('najlepsi-pracownicy');   
+    najlepsi.innerHTML = '';
+    
     let czasPracyString;
     let czasPracy;
     let podstawowyCzasPracy;
@@ -14,6 +17,13 @@ const obliczWynagrodzeniePracownika = () =>
     let stawka; 
     
     let t;
+    for(let i=0; i<liczbaPracownikow; i++)
+    {
+        if(osoba[i].style.backgroundColor === 'red')
+        {
+            osoba[i].style.backgroundColor = "white";
+        }
+    }
     
     let najdluzszyCzasPracy = [];          
     for(let j=0; j<liczbaPracownikow; j++)
@@ -25,7 +35,7 @@ const obliczWynagrodzeniePracownika = () =>
         );
     }
     
-    for(i=0; i < najdluzszyCzasPracy.length; i++)
+    for( i=0; i < najdluzszyCzasPracy.length; i++)
     {
         for(j=0; j < najdluzszyCzasPracy.length; j++)
         {
@@ -42,11 +52,11 @@ const obliczWynagrodzeniePracownika = () =>
     let pracownik2 = document.createTextNode('Miejsce 2. ' + najdluzszyCzasPracy[1].osoba + ' | ');
     let pracownik3 = document.createTextNode('Miejsce 3. ' + najdluzszyCzasPracy[2].osoba + ' | ');
     
-    document.getElementById('najlepsi-pracownicy').appendChild(pracownik1);
-    document.getElementById('najlepsi-pracownicy').appendChild(pracownik2);
-    document.getElementById('najlepsi-pracownicy').appendChild(pracownik3);
+    najlepsi.appendChild(pracownik1);
+    najlepsi.appendChild(pracownik2);
+    najlepsi.appendChild(pracownik3);
     
-    for(let i=0; i<liczbaPracownikow; i++)
+    for(i=0; i<liczbaPracownikow; i++)
     {
         czasPracyString = calkowityCzasPracy[i].value; 
         czasPracy = Number(czasPracyString);
@@ -70,14 +80,10 @@ const obliczWynagrodzeniePracownika = () =>
     
         let wartoscWyplaty = document.createTextNode(wynagrodzeniePracownika);
         let wartoscTymczasowa = wyplata[i].childNodes[0];
-                
         wyplata[i].replaceChild(wartoscWyplaty,wartoscTymczasowa);
     } 
         
     console.log(najdluzszyCzasPracy);
-    
 };
 
 let button = document.getElementById('oblicz').addEventListener('click', obliczWynagrodzeniePracownika);
-
-
