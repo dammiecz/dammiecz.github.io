@@ -1,0 +1,109 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div#arkusz-ocen
+{
+    display: flex;
+    flex-direction: column;
+    width: 100vw;  
+    max-width: 100%;
+    background-color: #d1d1e0; 
+}
+
+div#arkusz-ocen div h2
+{
+    margin-bottom: 3vw;
+    font-size: 3vw;
+}
+
+div#arkusz-ocen div#title
+{
+    display: flex;   
+    align-items: flex-end; 
+}
+
+div#arkusz-ocen div:nth-of-type(2) span.tytul
+{
+    font-size: 1.5vw;
+    font-weight: bold;
+    padding: 0.5vw; 
+    text-transform: uppercase;
+    flex-direction: row; 
+}
+
+div#arkusz-ocen div:nth-of-type(2) span:nth-of-type(1n+2)
+{
+    transform: rotate(-30deg);
+    transform-origin: left;
+}
+
+div#arkusz-ocen div:nth-of-type(1n+3)
+{
+   display: flex;  
+   align-items: center;  
+   border: 1px solid black;
+   border-radius: 1vw; 
+   margin-bottom: 1vw;
+   padding-top: 0.5vw;
+   padding-bottom: 0.5vw;
+}
+
+div#arkusz-ocen div:nth-of-type(1n+3) .uczen
+{
+    font-size: 1.4vw;
+    font-weight: bold; 
+    width: 14vw;   
+    margin-right: 0.5vw; 
+    margin-left: 1vw;
+}
+
+div#arkusz-ocen div:nth-of-type(1n+3) span.srednia, input[type='number'], input.zajecia-dodatkowe
+{    
+    padding: 0.5vw;
+    text-align: center;    
+    font-size: 1.5vw;
+    border: 1px solid black;
+    border-radius: 1vw; 
+    margin-right: 3vw;
+}
+
+div#arkusz-ocen div:nth-of-type(1n+3) input:hover
+{
+    cursor: pointer;
+    background-color: #ccccb3;
+}
+
+div#arkusz-ocen div:nth-of-type(1n+3) input:focus
+{   
+    outline: none;
+    background-color: #ccccb3;    
+}
+
+div#arkusz-ocen div:nth-of-type(1n+3) span.srednia, input[type='number']
+{
+    width: 5vw;
+}
+
+div#arkusz-ocen button#oblicz
+{
+    font-size: 2vw;
+    text-transform: uppercase;
+    padding: 1vw;
+    margin-bottom: 1vw;
+    border: 0.25vw solid black;
+    border-radius: 1vw;
+    width: 50vw;
+    margin-left: auto;
+    margin-right: auto;
+    outline: none;
+}
+
+div#arkusz-ocen button#oblicz:hover
+{
+    cursor: pointer;
+    opacity: 0.5;
+}
