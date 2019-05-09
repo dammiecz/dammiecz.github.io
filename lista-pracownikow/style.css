@@ -34,14 +34,25 @@ div#pracownicy div#title #tytul-pracownik
 
 div#pracownicy div#title #tytul-czas
 {
-    margin-right: 3vw;
+    margin-right: 2vw;
+}
+
+div#pracownicy div#title #tytul-czas::after
+{
+    content:' [h]';
+    text-transform: lowercase;
 }
 
 div#pracownicy div#title #tytul-stawka
 {
-    margin-right: 1vw;
+    margin-right: 2vw;
 }
 
+div#pracownicy div#title #tytul-stawka::after
+{
+    content:' [pln/h]';
+    text-transform: lowercase;
+}
 
 div#pracownicy div:nth-of-type(1n+3)
 {
@@ -65,5 +76,73 @@ div#pracownicy div input.czas, input.stawka, span.wyplata
     padding: 0.25vw;
     width: 5vw;
     text-align: center;
-    margin-left: 3vw;
+    margin-left: 3.5vw;
+}
+
+div#pracownicy div input.czas
+{
+    margin-right: 2vw;
+}
+
+div#pracownicy div input.stawka
+{
+    margin-right: 2vw;
+}
+
+div#pracownicy button#oblicz
+{
+    font-size: 3vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vw;
+    margin-top: 2vw;  
+    outline: none;
+}
+
+div#pracownicy button#oblicz:hover
+{
+    opacity: 0.5;
+}
+
+
+@media all and (max-width:900px)
+{
+    div#pracownicy div#title
+    {
+        display: flex;
+    }
+    
+    div#pracownicy div#title #tytul-pracownik
+    {
+        font-size: 15px;
+        flex-basis: 40%; 
+        
+    }
+    
+    div#pracownicy div#title #tytul-czas, #tytul-stawka, #tytul-wyplata 
+    {
+        font-size: 15px;
+        flex-basis: 20%;
+    } 
+    
+    div#pracownicy div#title #tytul-wyplata
+    {
+        padding-left: 3.5vw;
+    }
+    
+    
+    div#pracownicy div span.pracownik
+    {
+        flex-basis: 40%;
+        font-size: 15px;
+    }
+    
+    div#pracownicy div input.czas, input.stawka, span.wyplata
+    {
+        flex-basis: 20%;  
+        font-size: 15px;        
+    }    
 }
