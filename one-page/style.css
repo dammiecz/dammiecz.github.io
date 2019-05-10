@@ -1,0 +1,532 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div#page-container .content-box
+{
+    width: 100%; 
+    display: flex;  
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/*---------------------------- header START -------------------------------*/
+
+div#page-container header#header
+{
+    background-color: #87509c;
+    flex-direction: column;    
+}
+
+div#page-container header#header ul 
+{
+    text-align: right;  
+    margin-top: 3vw;
+    margin-right: 13vw;
+}
+
+div#page-container header#header ul li
+{
+    display: inline-block;
+    padding: 0.5vw 1vw 0.5vw 1vw;  
+}
+
+div#page-container header#header ul li a
+{
+    padding: 0.5vw 1vw 0.5vw 1vw;
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+    transition: background-color 0.5s ease;
+    font-size: 1vw;
+}
+
+
+div#page-container header#header ul li a:hover
+{
+    background-color: #643a79;
+    cursor: pointer;
+}
+
+div#page-container header#header p
+{
+    font-size: 3vw;
+    color: #fff;
+    text-align: center;    
+    padding-top: 10vw; 
+    padding-bottom: 5vw;
+}
+
+div#page-container header#header button#button
+{
+    background-color: #eb7d4b;
+    width: 25vw;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    font-size: 1.2vw;
+    margin-left: auto;
+    margin-right: auto;  
+    margin-bottom: 8vw;
+}
+
+/*---------------------------- header END -------------------------------*/
+
+/*---------------------------- team START -------------------------------*/
+
+div#page-container section#team
+{
+    background-color: #e7f1f8;   
+    flex-direction: column;
+}
+
+div#page-container section#team h2
+{
+    text-transform: uppercase;
+    color: #3c4761;
+    text-align: center;
+    margin-top: 8vw;
+    font-size: 3vw;    
+}
+
+div#page-container section#team hr
+{
+    width: 7vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.8vw;
+    margin-bottom: 0.8vw;
+}
+
+div#page-container section#team p
+{
+    color: #3c4761;
+    font-size: 1.5vw;
+    text-align: center;
+    margin-bottom: 1.5vw;    
+}
+
+div#page-container section#team ul
+{
+    margin-left: auto;
+    margin-right: auto;
+    list-style-type: none;
+}
+
+div#page-container section#team ul li
+{    
+    width: 20vw;  
+    display: inline-block;
+}
+
+div#page-container section#team ul li span.person-photo
+{
+    width: 15vw;
+    height: 15vw;
+    border-radius: 7.5vw;
+    background-color: #696969;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1vw;
+}
+
+div#page-container section#team ul li span.person-name
+{
+    text-transform: uppercase;
+    color: #000;
+    text-align: center;
+    font-size: 2vw;
+    display: block;
+}
+
+div#page-container section#team ul li span.person-role
+{
+    color: #55c2e9;
+    font-size: 1.6vw;
+    text-align: center;
+    display: block;
+    margin-bottom: 1.5vw;
+}
+
+div#page-container section#team ul li span.person-about
+{
+    font-size: 1vw;
+    text-align: center;
+    color: #000;
+    display: block;
+}
+
+div#page-container section#team ul li ul
+{
+    margin-top: 2vw;
+    text-align: center;
+    margin-bottom: 8vw;
+}
+
+div#page-container section#team ul li ul li
+{
+    width: 3vw;
+    height: 3vw;
+    border-radius: 1.5vw;
+    background-color: #000;
+    text-align: center;      
+}
+
+div#page-container section#team ul li ul li i
+{
+    font-size: 2vw;
+    color: #fff;    
+}
+
+/*---------------------------- team END -------------------------------*/
+
+/*---------------------------- skills START -------------------------------*/
+
+div#page-container section#skills
+{
+    background-color: #fff;   
+    flex-direction: column;
+}
+
+div#page-container section#skills h2
+{
+    text-transform: uppercase;
+    color: #3c4761;
+    text-align: center;
+    margin-top: 8vw;
+    font-size: 3vw;    
+}
+
+div#page-container section#skills hr
+{
+    width: 7vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.8vw;
+    margin-bottom: 0.8vw;
+}
+
+div#page-container section#skills p
+{
+    color: #3c4761;
+    font-size: 1.5vw;
+    text-align: center;
+    margin-bottom: 1.5vw;   
+    width: 60vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div#page-container section#skills ul
+{
+    text-align: center;   
+    margin-bottom: 8vw;
+}
+
+div#page-container section#skills ul li
+{
+    display: inline-block;
+    width: 12vw;
+    height: 12vw;
+    border-radius: 6vw;
+    border: 0.8vw solid;  
+    line-height: 10vw;
+    margin: 0 3.5vw 0 3.5vw;    
+}
+
+div#page-container section#skills ul li#circle-web-design
+{
+    border-color: #34b7eb;    
+}
+
+div#page-container section#skills ul li#circle-web-design::after
+{
+    content: 'web design';
+    white-space: pre;  
+    text-transform: uppercase;  
+    display: block;
+    font-size: 2vw; 
+    color: #3c4761;
+}
+
+div#page-container section#skills ul li#circle-html-css
+{
+    border-color: #dc4481;   
+}
+
+div#page-container section#skills ul li#circle-html-css::after
+{
+    content: 'html / css';
+    white-space: pre;  
+    text-transform: uppercase; 
+    display: block;
+    font-size: 2vw; 
+    color: #3c4761;
+}
+
+div#page-container section#skills ul li#circle-graphic-design
+{
+    border-color: #17c5aa;
+}
+
+div#page-container section#skills ul li#circle-graphic-design::after
+{
+    content: 'Graphic Design';
+    white-space: pre;
+    display: block;
+    font-size: 2vw;  
+    color: #3c4761;
+}
+
+div#page-container section#skills ul li#circle-ui-ux
+{
+    border-color: #ec7d4f;
+}
+
+div#page-container section#skills ul li#circle-ui-ux::after
+{
+    content: 'UI / UX';
+    white-space: pre;  
+    text-transform: uppercase; 
+    display: block;
+    font-size: 2vw; 
+    color: #3c4761;
+}
+
+div#page-container section#skills ul li span.skills-circles
+{
+    font-size: 3.3vw;
+}
+
+
+/*---------------------------- skills END -------------------------------*/
+
+/*---------------------------- opinions START -------------------------------*/
+
+div#page-container section#opinions
+{
+    background-color: #d74680; 
+    flex-direction: column;
+}
+
+div#page-container section#opinions h2
+{
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin-top: 8vw;
+    font-size: 3vw;    
+}
+
+div#page-container section#opinions hr
+{
+    width: 7vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.8vw;
+    margin-bottom: 0.8vw;
+    border: 1px solid #b73c6d;
+}
+
+div#page-container section#opinions p
+{
+    color: #fff;
+    font-size: 1.5vw;
+    text-align: center;
+    margin-bottom: 1.5vw;   
+    width: 60vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div#page-container section#opinions table 
+{
+    width: 75vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 8vw;
+}
+
+div#page-container section#opinions table tr td
+{
+    width: 50%;
+    padding: 2vw;     
+}
+
+div#page-container section#opinions table tr td span.client-photo
+{
+    width: 10vw;
+    height: 10vw;
+    border-radius: 5vw;
+    background-color: #787878;
+    display: inline-block;  
+}
+
+div#page-container section#opinions table tr td span.client-about
+{
+    font-size: 1.3vw;
+    text-align: left;
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    left: 4vw;
+    top: 0vw;   
+    width: 60%;
+}
+
+div#page-container section#opinions table tr td span.client-name
+{
+    text-transform: uppercase;
+    color: #fff;
+    text-align: left;
+    font-size: 2vw;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    position: relative;
+    left: 15vw;
+    top: 1.2vw;
+    width: 60%;
+}
+
+div#page-container section#opinions table tr td span.client-role
+{
+    color: #ffdd99;
+    font-size: 1.3vw;
+    text-align: left;
+    display: block;    
+    position: relative;
+    left: 15vw;
+    top: 2vw;
+    width: 60%;
+}
+
+/*---------------------------- opinions END -------------------------------*/
+
+/*---------------------------- contact START -------------------------------*/
+
+div#page-container section#contact
+{
+    background-color: #3c5499; 
+    flex-direction: column;
+}
+
+div#page-container section#contact h2
+{
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin-top: 8vw;
+    font-size: 3vw;    
+}
+
+div#page-container section#contact hr
+{
+    width: 7vw;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.8vw;
+    margin-bottom: 0.8vw;
+    border: 1px solid #273a71;
+}
+
+div#page-container section#contact p
+{
+    color: #fff;
+    font-size: 1.5vw;
+    text-align: center;
+    margin-bottom: 3vw;   
+    width: 60vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+div#page-container section#contact form
+{
+    width: 60vw;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+div#page-container section#contact form input
+{
+    width: 45%;
+    display: inline-block;
+    margin-bottom: 2vw;
+    position: relative;
+    padding: 0.5vw;
+    background-color: #1a3277;
+    outline: none;
+    color: #fff;
+    border: none;
+}
+
+div#page-container section#contact form:nth-of-type(2)
+{
+    margin-right: 0;
+}
+
+div#page-container section#contact form textarea
+{
+    display: block;
+    width: 100%;
+    height: 10vw;
+    margin-bottom: 4vw;
+    padding: 0.5vw;
+    background-color: #1a3277;
+    outline: none;
+    resize: none;
+    color: #fff;
+    border: none;
+}
+
+div#page-container section#contact button
+{
+    background-color: #55c2e9;
+    width: 25vw;
+    color: #fff;
+    text-transform: uppercase;
+    padding-top: 1.5vw;
+    padding-bottom: 1.5vw;
+    font-size: 1.2vw;
+    margin-left: auto;
+    margin-right: auto;  
+    margin-bottom: 8vw;
+}
+
+/*---------------------------- contact END -------------------------------*/
+
+/*---------------------------- footer START -------------------------------*/
+
+div#page-container footer ul
+{
+    text-align: center;
+    background-color: #1a3277;
+    padding: 1vw 0vw 1vw 0vw;
+}
+
+div#page-container footer ul li
+{
+    display: inline-block; 
+    padding: 1vw 1.5vw 1vw 1.5vw;
+}
+
+div#page-container footer ul li a
+{    
+    text-decoration: none;
+    transition: background-color 0.5s ease;
+    color: #fff; 
+    padding: 1vw;
+}
+
+div#page-container footer ul li a:hover
+{
+    background-color: #55c2e9;
+}
+
+/*---------------------------- footer END -------------------------------*/
