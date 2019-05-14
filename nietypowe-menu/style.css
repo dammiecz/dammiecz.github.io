@@ -1,0 +1,72 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none; 
+    font-size: 0;
+}
+
+nav
+{
+    width: 100%;
+    height: 80px;    
+}
+
+nav div.bcg
+{
+    background-color: lightblue;
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    position: relative;
+    top: 0;
+}
+
+nav div#left-bcg
+{       
+    transform-origin: left;
+    transform: skew(0deg, -3deg);
+    
+}
+
+nav div#right-bcg
+{          
+    transform-origin: right;
+    transform: skew(0deg, 3deg);
+}
+
+nav ul
+{
+    position: absolute;
+    display: inline-block;
+    top: 20px;
+}
+
+nav ul.left
+{  
+    left: 2vw;   
+}
+
+nav ul.right
+{
+    right: 2vw; 
+}
+
+nav ul li
+{
+    display: inline-block;
+    padding-left: 2vw;
+    padding-right: 2vw;
+}
+
+nav ul li a
+{
+    font-size: 20px;
+}
+
+section h1
+{
+    font-size: initial;
+    text-align: center;
+}
