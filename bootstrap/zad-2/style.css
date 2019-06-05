@@ -35,7 +35,7 @@ div.card-body
     text-align: center;
 }
 
-div.accordion div.card #collapseOne
+div.accordion div.card #collapseOne, #collapseTwo, #collapseThree
 {
-    transition: height 1s ease-in;
+    transition: height 0.5s ease-in-out;
 }
