@@ -1,0 +1,41 @@
+*
+{   margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Merriweather Sans', sans-serif; }
+
+h1
+{   text-align: center;   }
+
+hr
+{   height: 0.25vh;     
+    width: 50vh;
+    display: block;
+    margin: 1vw auto 1vw auto;  
+    background-color: #cc7a00;  }
+
+h5.mb-0
+{
+    text-align: center;    
+}
+
+button.btn
+{
+    color: #cc7a00;
+    transition: color 0.5s ease;
+}
+
+button.btn:hover
+{
+    color: #994800;
+}
+
+div.card-body
+{
+    text-align: center;
+}
+
+div.accordion div.card #collapseOne
+{
+    transition: height 1s ease-in;
+}
