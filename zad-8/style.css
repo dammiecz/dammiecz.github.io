@@ -24,7 +24,7 @@ div.product
     font-size: 0; 
 }
 
-div.product:hover::after
+div.product::after
 {
     content:'';
     position: absolute;
@@ -33,24 +33,31 @@ div.product:hover::after
     background-color: #ff6f00; 
     width: 100%; 
     height: 100%;
+    opacity: 0; 
+    transition: opacity 0.5s ease;    
+}
+
+div.product:hover::after
+{   
     opacity: 0.7;     
 }
 
 div.product i.fa-shopping-basket
-{        
-    display: none;    
+{              
+    opacity: 0;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
     font-size: 50px;
     top: 45%;
     left: 40%;
-    color: #fff;  
+    color: #fff;    
 }
 
 div.product:hover i.fa-shopping-basket
-{    
-    display: block;  
+{   
+    opacity: 1;   
+    transition: opacity 0.5s ease; 
 }
 
 div.product:nth-child(1)
