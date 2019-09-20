@@ -4,3 +4,6 @@ https://dammiecz.github.io/one-page/index.html
 https://dammiecz.github.io/zad-7/index.html
 https://dammiecz.github.io/bootstrap/zad-1/index.html
 https://dammiecz.github.io/bootstrap/zad-2/index.html
+https://dammiecz.github.io/portfolio/game_memory.html
+https://dammiecz.github.io/portfolio/game_szubienica.html
+https://dammiecz.github.io/portfolio/game_wheel_of_fortunel.html
