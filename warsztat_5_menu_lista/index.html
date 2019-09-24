@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>Baza danych</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">        
+    </head>
+    <body>        
+        <div id="container">
+            <header id="header">
+                <h1>Baza danych części samochodowych</h1>                
+            </header>            
+            <nav>                
+                <div id="navigation-panel" role="navigation">
+                    <h3>Auto Type</h3>
+                    <ul id="gt-list1" class="gt-list">                        
+                        <li id="gt1" class="gt-name">NADWOZIE
+                            <ul id="sup-list1" class="sup-list">
+                                <li onclick="createDeviationToList()">Sup1</li>
+                                <li onclick="createDeviationToList()">Sup2</li>
+                                <li onclick="createDeviationToList()">Sup3</li>
+                            </ul>
+                        </li>
+                        <li id="gt2" class="gt-name">PODWOZIE
+                            <ul id="sup-list2" class="sup-list">
+                                <li>Sup1</li>
+                                <li>Sup2</li>
+                                <li>Sup3</li>
+                                <li>Sup4</li>
+                            </ul>
+                        </li>
+                        <li id="gt3" class="gt-name">SILNIK
+                            <ul id="sup-list3" class="sup-list">
+                                <li>Sup1</li>
+                                <li>Sup2</li>
+                                <li>Sup3</li>
+                                <li>Sup4</li>
+                                <li>Sup5</li>
+                            </ul>
+                        </li>
+                        <li id="gt4" class="gt-name">WNĘTRZE
+                            <ul id="sup-list4" class="sup-list">
+                                <li>Sup1</li>
+                                <li>Sup2</li>
+                                <li>Sup3</li>
+                                <li>Sup4</li>
+                                <li>Sup5</li>
+                            </ul>
+                        </li>
+                        <li id="gt5" class="gt-name">DODATKI
+                            <ul id="sup-list5" class="sup-list">
+                                <li>Sup1</li>
+                                <li>Sup2</li>
+                            </ul>
+                        </li>
+                        <li id="gt6" class="gt-name">CZ. SPECJALNE
+                            <ul id="sup-list6" class="sup-list">
+                                <li>Sup1</li>
+                               
+                            </ul>
+                        </li>
+                    </ul> 
+                </div>
+            </nav>   
+        </div>           
+        <div id="add-new-deviation">
+            <div id="form-container">
+                <form onsubmit="return submitDeviation()">
+                    <span id="exit" onclick="exitForm()">&#215</span>
+                    <h5>Nr rewizji</h5>
+                    <input id="rfq-no" class="form-field" type="number" >
+                    <h5>Nr zamówienia</h5>
+                    <input id="po-no" class="form-field" type="number" >
+                    <h5>Nr katalogowy</h5>
+                    <input id="impacted-code" class="form-field" type="text" >                    
+                    <h5>Opis części</h5>
+                    <textarea id="description" class="form-field" rows="5" cols="50"></textarea><br>
+                    <input type="submit" id="enter-deviation" value="Dolącz do zamówienia"> 
+                </form>
+            </div>
+        </div>                
+        <div id="deviation-list-sup1"></div>
+        <div id="deviation-list-sup2"></div>
+        <div id="deviation-list-sup3"></div>
+        <div id="deviation-list-sup4"></div>
+        <div id="deviation-list-sup5"></div>
+                
+        <script type="text/javascript" src="script.js"></script>
+        
+    </body>
+</html>
