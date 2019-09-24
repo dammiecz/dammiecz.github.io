@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Slider</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
+        <link rel="stylesheet" href="style.css">         
+    </head>    
+    <body>  
+        <div id="slider-container">
+            <div class="current-slide fade">
+                <div class="slide-number">1 of 4</div>
+                <img src="img/slide1.jpg" alt="Image cannot be loaded!" class="slide-img">
+                <div class="slide-name">Arctic sunset</div>
+            </div>
+            <div class="current-slide fade">
+                <div class="slide-number">2 of 4</div>
+                <img src="img/slide2.jpg" alt="Image cannot be loaded!" class="slide-img">
+                <div class="slide-name">Arctic mountains</div>
+            </div>
+            <div class="current-slide fade">
+                <div class="slide-number">3 of 4</div>
+                <img src="img/slide3.jpg" alt="Image cannot be loaded!" class="slide-img">
+                <div class="slide-name">Lonely tree</div>
+            </div>
+            <div class="current-slide fade">
+                <div class="slide-number">4 of 4</div>
+                <img src="img/slide4.jpg" alt="Image cannot be loaded!" class="slide-img">
+                <div class="slide-name">House in the mountains</div>
+            </div>
+            <a class="prev" onclick="nextSlide(-1)">&#10094</a>
+            <a class="next" onclick="nextSlide(1)">&#10095</a>
+        </div>            
+        <div id="slide-selector">
+            <span class="dot" onclick="currentSlide(0)"></span>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        
+        <script type="text/javascript" src="script.js"></script>
+       
+    </body>    
+</html>
