@@ -7,3 +7,11 @@ https://dammiecz.github.io/bootstrap/zad-2/index.html
 https://dammiecz.github.io/portfolio/game_memory.html
 https://dammiecz.github.io/portfolio/game_szubienica.html
 https://dammiecz.github.io/portfolio/game_wheel_of_fortunel.html
+dammiecz.github.io/warsztat_1_tabela/index.html
+dammiecz.github.io/warsztat_2_formularz/form_1/index.html
+dammiecz.github.io/warsztat_2_formularz/form_2/index.html
+dammiecz.github.io/warsztat_3_slider/index.html
+dammiecz.github.io/warsztat_4_akordeon/index.html
+dammiecz.github.io/warsztat_5_menu_lista/index.html
+dammiecz.github.io/warsztat_6_menu/index.html
+dammiecz.github.io/warsztat_7_bank/index.html
