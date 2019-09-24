@@ -1,0 +1,143 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    background-image: url('img/bcg.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+table
+{
+    width: 850px;
+    margin-left: auto;
+    margin-right: auto;    
+    padding: 30px;
+}
+
+table tr
+{
+    display: block;
+    margin-top: 10px;    
+}
+
+table td
+{
+    display: inline-block; 
+}
+
+table th
+{
+    display: inline-block;
+}
+
+table tr:nth-of-type(1)
+{
+    text-align: center;
+    text-transform: uppercase;    
+    font-size: 40px;
+}
+
+table tr:nth-of-type(2) td:nth-of-type(1)
+{
+    width: 5%;
+}
+
+table tr:nth-of-type(2) td:nth-of-type(2)
+{
+    font-size: 30px; 
+    width: 43%;
+}
+
+table tr:nth-of-type(2) td:nth-of-type(4)
+{
+    font-size: 25px;
+}
+
+table tr:nth-of-type(3)
+{
+    width: 100%;
+}
+
+table tr:nth-of-type(3) th:nth-of-type(1)
+{
+    width: 3%;
+}
+
+table tr:nth-of-type(3) th:nth-of-type(2)
+{
+    width: 10%;
+}
+
+table tr:nth-of-type(3) th:nth-of-type(n+3)
+{
+    width: 69px;
+}
+
+table tr:nth-of-type(n+4) td:nth-of-type(1)
+{
+    width: 3%;
+    font-weight: bold;
+}
+
+table tr:nth-of-type(n+4) td:nth-of-type(2)
+{
+    width: 10%;
+}
+
+table tr:nth-of-type(n+4) td:nth-of-type(n+3)
+{
+    width: 60px;    
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+table tr:nth-of-type(n+4) td:nth-of-type(n+3) input
+{
+    width: 70%;
+    text-align: center;
+    padding: 3px;
+    background-image: url('img/bcg.jpg');
+    color: #fff;
+}
+
+button
+{
+    display: block;
+    font-size: 40px;
+    width: 700px;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    border: none;    
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    transition: opacity 0.3s ease;    
+}
+
+button:hover
+{
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 0.3s ease; 
+    box-shadow: 0 3px 8px 0 rgba(0,0,0,0)
+}
+
+button:active
+{
+    outline: none;
+}
+
+button:focus
+{
+    outline: none;
+}
