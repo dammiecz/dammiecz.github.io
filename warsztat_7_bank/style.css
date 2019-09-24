@@ -1,0 +1,84 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    text-align: center;  
+    background-image: url('img/bcg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+h1
+{
+    text-transform: uppercase;
+    font-size: 50px;
+    color: #000;
+    margin-bottom: 30px;   
+    margin-top: 20px;
+}
+
+div#dane
+{
+    width: 350px;;
+    height: 100px;
+    padding-top: 30px;
+    border-radius: 50px;
+    border: #663300 solid 5px; 
+    background-color: #cc7a00;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 25px;
+    box-shadow: 0px 0px 15px 5px #663300;
+}
+
+div#dane::after
+{
+    content: '';
+    display: block;
+    width: 90%;
+    height: 110%;   
+    left: 4.5%; 
+    bottom: 84%;
+    border-radius: 40px;
+    border: #663300 dashed 2px; 
+    position: relative;
+}
+
+.gotowy
+{
+    opacity: 0.8;
+}
+
+.input-pic-style
+{
+    background-image: url('img/worek.png');  
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: inline-block;
+    text-align: center;
+    padding-left: 1%;
+}
+
+.input-pic-style p
+{   
+    transform: rotateZ(7.5deg);      
+}
+
+.result-style
+{
+    font-size: 10vw;
+    text-transform: uppercase;
+    text-align: center;
+    color: #0073e6;
+    height: 11vw;
+}
