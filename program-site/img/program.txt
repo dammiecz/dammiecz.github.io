@@ -1,0 +1,39 @@
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
+
+
+public class JavaOOP
+{
+    public static void main(String args[]) throws IOException
+    {
+        //deklaracja zmiennych 
+        //a i b - boki prostok¹ta, P - pole prostok¹ta
+        int a,b,P = 0;  
+                
+        //utworzenie obiektu "dane" klasy BufferedReader w celu pobrania danych z klawiatury
+        BufferedReader dane = new BufferedReader(new InputStreamReader(System.in));
+        
+        //wywo³anie pêtli do-while
+        do
+        {
+            //pobranie z klawiatury d³ugoœci boku a prostok¹ta
+            System.out.print("Podaj dlugoœæ boku a: ");        
+            a = Integer.parseInt(dane.readLine());
+
+            //pobranize z klawiatury d³ugoœci boku b prostok¹ta
+            System.out.print("Podaj dlugoœæ boku b: ");  
+            b = Integer.parseInt(dane.readLine());
+
+            //sprawdzenie warunku czy podane d³ugoœci boków s¹ wiêksze od 
+            if(a>0 && b>0)
+                { P = a * b; }
+            else
+                { System.out.println("B³êdne dane! Spróbuj jeszcze raz."); }            
+        }
+        while(a<=0 || b<=0);        
+        
+        //wyœwietlenie rozwi¹zania na ekranie
+        System.out.println("Pole prostok¹ta o bokach "+ a + " i " + b + " wynosi " + P);        
+    }
+}
