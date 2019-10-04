@@ -1,0 +1,820 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+h2
+{
+    text-align: center;
+    padding: 8vh 3vh 8vh 3vh;
+}
+
+aside
+{       
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    z-index: 1;    
+    color: #fff;
+    background-color: #000;
+}
+
+aside span:nth-of-type(1)
+{    
+    color: #22b14c;    
+}
+
+aside span:nth-of-type(1) span#termin
+{
+    color: #fff;
+}
+
+aside span:nth-of-type(2)
+{
+    display: flex;
+    width: 270px;
+    align-items: center;
+    position: absolute;
+    right: 410px;
+}
+
+aside span:nth-of-type(3)
+{
+    display: flex;
+    width: 385px;
+    align-items: center;
+    position: absolute;
+    right: 1vw;
+}
+
+aside img
+{
+    height: 50px;
+    margin-right: 10px;
+}
+
+/*.scroll-aside
+{    
+    background-color: #000;
+    
+}*/
+
+/*----------------------------styl naglowka-----------------------------------*/
+header
+{   
+    width: 100%;
+    height: 100vh;
+    background-image: url("img/bckg_08.jpg");    
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;    
+    color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+
+header p
+{
+    position: absolute;
+    top: 20vh;
+    left: 5vw;
+    width: 60vw;
+    text-align: center;
+    line-height: 70px;
+/*    font-family: 'Lobster', cursive;*/
+    font-family: 'Caveat', cursive;
+    font-weight: bold;
+    font-size: 60px;
+/*    color: #66ff00;*/
+}
+
+header img
+{    
+    width: 50vw;
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+}
+
+/*----------------------------styl menu---------------------------------------*/
+nav
+{
+    position: fixed;
+    left: 0;
+    top: 60px;
+    width: 100vw;    
+    color: #fff; 
+    height: 380px;
+    z-index: 10;
+}
+
+nav ul
+{   
+    width: 100%;     
+    height: 100%;
+}
+
+nav ul li
+{
+    display: block;
+    position: relative;
+    text-align: center;
+    background-image: linear-gradient(#22b14c,#44d36f);
+    color: #fff;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding-top: 20px;
+    padding-bottom: 20px;    
+    padding-right: 2px;
+    margin-left: 70vw;
+    font-size: 20px;
+    transition: all 0.75s ease;    
+}
+
+nav ul li a
+{
+    color: #fff;
+}
+
+nav ul li img
+{
+    height: 25px;
+    margin-left: 3px;   
+}
+
+nav ul li:nth-of-type(1)
+{
+    top: 30px;    
+}
+
+nav ul li:nth-of-type(2)
+{
+    top: 60px;
+}
+
+nav ul li:nth-of-type(3)
+{
+    top: 90px;
+}
+
+nav ul li:nth-of-type(4)
+{
+    top: 120px;
+}
+
+nav ul li:hover
+{
+    opacity: 0.6;
+/*    background-image: linear-gradient(#fff,#000,#fff);*/
+    color: #fff;
+    cursor: pointer;
+}
+
+.scroll-nav-ul-li
+{
+    display: inline-block;
+    margin-left: 0;
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: auto;    
+    position: fixed;
+    width: 25vw; 
+    background-image: linear-gradient(#fff,#000,#fff);
+    transition: all 0.5s ease;
+}
+
+.scroll-nav-ul-li:hover
+{
+    background-image: linear-gradient(#000,#fff,#000);
+    opacity: 1;
+    color: #cc7a00;
+    z-index: 10;
+}
+
+
+@media all and (max-width: 920px)
+{
+/*    body
+    {
+        text-align: center;
+    }*/
+    
+    aside
+    {
+        
+    }
+}
+
+/*----------------------------styl sekcji o mnie----------------------------*/
+section#o-mnie
+{
+    width: 100%;
+    height: fit-content;
+    background-image: linear-gradient(rgba(255,255,255,0),rgba(171,205,204,0.6));    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+}
+
+section#o-mnie div#pole
+{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;    
+    align-items: center; 
+    padding: 5vh;
+    flex-basis: 50%;
+}
+
+section#o-mnie div#niebieski
+{
+    display: flex;
+    justify-content: center;
+    flex-basis: 100%;  
+    padding: 5px;
+}
+
+section#o-mnie div#zielony, div#czerwony, div#fioletowy, div#zolty
+{
+    display: flex;
+    flex-basis: 50%;    
+    padding: 5px;
+}
+
+section#o-mnie div#zielony
+{
+    justify-content: center;
+}
+
+section#o-mnie div#czerwony
+{
+    justify-content: flex-start;
+}
+
+section#o-mnie div#fioletowy
+{
+    justify-content: center;
+}
+
+section#o-mnie div#zolty
+{
+     justify-content: flex-end;
+}
+
+section#o-mnie div div.ball
+{
+    width: 120px;
+    height: 120px;
+    border-radius: 60px;  
+    box-shadow: 0px 10px 5px #888888;
+    transform: rotate(-135deg);
+}
+
+section#o-mnie div#niebieski div
+{
+    background-image: linear-gradient(#80bfff,#fff);  
+    order: 1;   
+    
+}
+
+section#o-mnie div#zielony div
+{
+    background-image: linear-gradient(#80ff80,#fff);   
+    order: 2;    
+}
+
+section#o-mnie div#fioletowy div
+{
+    background-image: linear-gradient(#d580ff,#fff);   
+    order: 2;    
+}
+
+section#o-mnie div#zolty div
+{
+    background-image: linear-gradient(#ffff80,#fff);   
+    order: 3;    
+}
+
+section#o-mnie div#czerwony div
+{
+    background-image: linear-gradient(#ff8080,#fff); 
+    order: 3;    
+}
+
+section#o-mnie div#id-info
+{
+    width: 50%;
+    height: fit-content;
+    text-align: center;
+    flex-basis: 50%;       
+    padding: 5vh;
+}
+
+section#o-mnie div#id-info div#zdjecie
+{
+    width: 30vw;
+    height: 30vw;
+    background-image: linear-gradient(grey,green);
+    border-radius: 15vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#o-mnie div#id-info p:nth-child(3)
+{
+    font-size: 30px;
+    margin-top: 1.5vw;    
+}
+
+section#o-mnie div#id-info p:nth-child(2)
+{
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 3vw;
+}
+
+section#o-mnie div#id-info p:nth-child(4)
+{
+    text-align: justify;
+    padding: 1.5vw;
+}
+
+section#o-mnie div#id-info p:nth-child(4)::before
+{
+    content:".  ";
+    opacity: 0;
+}
+
+@media all and (max-width: 992px)
+{
+    section#o-mnie div#pole
+    {
+        width: 50%;    
+        display: block;
+        height: fit-content;
+    }
+    
+    section#o-mnie div#niebieski, div#zielony, div#czerwony, div#fioletowy, div#zolty
+    {
+        display: block;
+    }
+}
+
+/*----------------------------styl sekcji o kursie----------------------------*/
+section#o-kursie
+{
+    width: 100%;
+    height: fit-content;    
+    background-color: rgba(171,205,204,0.6); 
+}
+
+section#o-kursie h2
+{
+    color: rgb(0,36,96);
+}
+
+section#o-kursie p#p-kurs
+{
+    padding-left: 2vw;
+    padding-right: 2vw;
+    text-align: justify;
+    margin-bottom: 7vh;
+    line-height: 40px;
+}
+
+/*section#o-kursie p#p-kurs::before
+{
+    content:'.   ';
+    opacity: 0;
+}*/
+
+section#o-kursie div
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section#o-kursie div div.info
+{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+section#o-kursie div div.info div.circle
+{    
+    background-color: rgba(91,155,213,0.5);    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 35px;
+    border-radius: 50%;
+    order: 2;
+    flex-basis: 25%;
+    height: 100%;
+}
+
+section#o-kursie div div.info:nth-of-type(1) div.circle img
+{
+    width: 65%;     
+}
+
+section#o-kursie div div.info div.circle h6
+{
+    font-size: 26px;
+    text-align: center;
+}
+
+section#o-kursie div div.info p
+{     
+    flex-basis: 75%;
+    text-align: justify;
+    order: 3;
+    padding: 20px;
+    line-height: 40px;
+}
+
+section#o-kursie div div.info p span.bold
+{
+    font-weight: bold;
+}
+
+section#o-kursie div div.info:nth-of-type(even) p
+{
+    order: 1;
+}
+
+section#o-kursie ul
+{
+    text-align: center;
+}
+
+section#o-kursie ul li span
+{
+    content: "HTML";
+    font-weight: bold;
+}
+
+section#o-kursie ul li img
+{
+    width: 30px;
+}
+    
+section#o-kursie button#informator
+{
+    padding: 20px;   
+    transition: opacity 0.4s ease;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+
+section#o-kursie button#informator:hover
+{
+    opacity: 0.5;
+    cursor: pointer;
+}
+    
+/*@media all and (min-width: 992px)
+{
+    section#o-kursie div
+    {
+        flex-direction: row;
+        flex-wrap: wrap;        
+    }
+}
+
+@media all and (min-width: 1315px)
+{      
+
+}*/
+
+/*--------------------------styl portfolio------------------------------------*/
+
+section#portfolio
+{   
+    padding: 0;
+    background-color: rgba(171,205,204,0.6);
+    height: min-content;
+    width: 100%;    
+}
+
+section#portfolio h2
+{
+    color: rgb(0,36,96);
+}
+
+section#portfolio div.album
+{      
+    font-size: 0px;    
+}
+
+section#portfolio div.album div.portfolio-item
+{   
+    width: 100%; 
+    height: 400px;
+    font-size: 0px;
+    display: block;
+    position: relative;   
+}
+
+section#portfolio div.portfolio-item img
+{    
+    width: 100%; 
+    height: 100%;   
+    display: block;
+    font-size: 0;
+}
+
+section#portfolio div.album div.portfolio-item::after
+{   
+    content:'';
+    width: 100%;
+    height: 100%;    
+    position: absolute; 
+    display: block;
+    top: 0;
+    left: 0;
+    text-align: center;     
+    background-color: rgba(171,205,204,0.6);  
+    opacity: 0;    
+    transition: opacity 0.3s ease;     
+}
+
+section#portfolio div.album div.portfolio-item:hover::after
+{   
+    opacity: 1; 
+    background-color: rgba(171,205,204,0.9);
+    cursor: default;    
+}
+
+div.opis
+{
+    text-align: center;
+    width: 70%;
+    height: 60%;
+    position: absolute;
+    top: 15%;
+    left: 15%;
+    opacity: 0;
+}
+
+section#portfolio div.album div.portfolio-item:hover div.opis
+{
+    opacity: 1;
+    z-index: 1;
+}
+
+
+@media all and (min-width: 992px)
+{  
+    section#portfolio div.album div.portfolio-item
+    {
+        display: inline-block;
+        width: 50%;
+    }
+}
+
+/*----------------------------styl sekcji jak aplikować-----------------------*/
+section#jak-aplikowac
+{
+    width: 100%;
+    background-image: linear-gradient(#000,#fff);  
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+    
+section#jak-aplikowac h2
+{
+    color: rgb(0,36,96);
+    flex-basis: 100%;
+}
+
+section#jak-aplikowac div.krok
+{
+    padding: 3vh;
+    display: flex;
+    align-items: center; 
+    flex-direction: column;    
+    flex-basis: 25%;
+}
+
+section#jak-aplikowac div.krok:nth-child(2)::after
+{
+    content: "Wyślij zgloszenie";
+    text-align: center;
+    font-size: 20px;
+}
+
+section#jak-aplikowac div.krok:nth-child(3)::after
+{
+    content: "Rozwiąż test predyspozycji";
+    text-align: center;
+    font-size: 20px;
+}
+
+section#jak-aplikowac div.krok:nth-child(4)::after
+{
+    content: "Podpisz umowę";
+    text-align: center;
+    font-size: 20px;
+}
+
+section#jak-aplikowac div.krok:nth-child(5)::after
+{
+    content: "Witamy na pokladzie";
+    text-align: center;
+    font-size: 20px;
+}
+ 
+section#jak-aplikowac div.krok img
+{   
+    width: 100%;    
+}
+
+/*@media all and (min-width: 992px)
+{
+    section#jak-aplikowac
+    {
+        flex-direction: row;  
+        flex-wrap: nowrap;
+    }
+    
+    section#jak-aplikowac h2
+    {
+        flex-basis: 100%;        
+    }
+    
+    section#jak-aplikowac div.krok
+    {
+        display: flex;
+        flex-basis: 25%;        
+    }
+}*/
+/*----------------------------styl sobotnie kodowwanie------------------------*/
+section#sobotnie-kodowanie h2
+{
+    background-image: url('img/bckg_02.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100vh;
+    padding-top: 30vh;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 40px;
+}
+
+section#sobotnie-kodowanie h5
+{
+    text-align: center;
+    position: relative;
+    top: -60vh;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+#sobotnie-kodowanie-wiecej
+{
+    position: relative;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    top: -50vh;
+    padding: 15px;
+    text-transform: uppercase;
+    transition: opacity 0.5s ease;
+}
+
+#sobotnie-kodowanie-wiecej:hover
+{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+section#sobotnie-kodowanie p
+{
+    line-height: 40px;
+    padding: 20px;
+    text-align: justify;
+    position: relative;
+    top: -100px;
+}
+
+/*----------------------------styl formularza---------------------------------*/
+section#kontakt
+{
+    width: 100%;
+    height: 0vh;
+    background-color: rgb(171,205,204);  
+    position: absolute;
+    top: 0;
+    left: 0;    
+    z-index: 10;    
+    overflow: hidden;
+    transition: height 1s ease;
+}
+
+section#kontakt h2
+{
+    color: rgb(0,36,96);
+}
+
+section#kontakt form
+{
+    width: 100%;  
+}
+
+section#kontakt form input, textarea
+{
+    display: block;
+    width: 96%;
+    font-size: 15px;
+    margin: 2vh 2vw 2vh 2vw;
+    padding: 2vh 2vw 2vh 2vw;
+    font-size: 30px;
+}
+
+section#kontakt form textarea
+{
+    resize: none;
+}
+
+section#kontakt div
+{
+    text-align: center;
+}
+
+section#kontakt button
+{   
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 5px; 
+    background-image: linear-gradient(rgb(171,205,204), rgb(112,173,71));  
+    border: none;
+    box-shadow: 4px 4px 6px;
+    color: rgb(41,72,127);
+    text-transform: uppercase; 
+    font-weight: bold;
+}
+
+section#kontakt button#exit
+{
+    display: block;
+    margin-top: 50px;
+    margin-right: 50px;
+    padding: 5px;
+    font-size: 30px;   
+}
+
+section#kontakt button#exit:hover
+{
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+section#kontakt div h4
+{
+    margin-top: 4vh;
+    color: rgb(0,32,96);
+}
+
+/*----------------------------styl footera------------------------------------*/
+footer
+{
+    background-color: #000;
+    text-align: center;
+    height: 10vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+    color: #fff;    
+}
+
+footer img
+{
+    height: 8vh;
+    padding-right: 2vw;
+}

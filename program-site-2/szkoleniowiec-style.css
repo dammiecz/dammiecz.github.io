@@ -1,0 +1,293 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+aside
+{       
+    position: fixed;
+    width: 100vw;
+    left: 0;
+    top: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    z-index: 1;    
+    color: #fff;
+    background-color: #000;
+}
+
+aside span:nth-of-type(1)
+{    
+    color: #22b14c;    
+}
+
+aside span#termin
+{
+    color: #fff;
+}
+
+aside span:nth-of-type(2)
+{
+    display: flex;
+    width: 270px;
+    align-items: center;
+    position: absolute;
+    right: 410px;
+}
+
+aside span:nth-of-type(3)
+{
+    display: flex;
+    width: 385px;
+    align-items: center;
+    position: absolute;
+    right: 1vw;
+}
+
+aside img
+{
+    height: 50px;
+    margin-right: 10px;
+}
+
+/*----------------------------styl sekcji menu----------------------------*/
+
+nav
+{
+    position: fixed;
+    top: 60px;
+    width: 100vw;
+    z-index: 10;
+}
+
+nav ul
+{   
+    display: flex;
+    flex-direction: row;
+}
+
+nav ul li
+{
+    display: flex;    
+    justify-content: center;    
+    text-transform: uppercase;
+    font-size: 20px;
+    flex-basis: 33.3vw;
+    height: 60px;
+    background-image: linear-gradient(#000,#fff,#000);    
+}
+
+nav ul li a
+{
+    display: flex;
+    color: #000;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    transition: color 0.5s ease;
+}
+
+nav ul li a::after
+{
+    content: '';
+    width: 30px;
+    height: 30px;
+    margin-left: 10px;
+    background-image: url('ico/off.png');
+    background-size: cover;
+    background-position: center;
+    transition: background-image 0.5s ease;
+}
+
+nav ul li a:hover::after
+{
+    background-image: url('ico/on.png');
+}
+
+/*----------------------------styl sekcji o mnie----------------------------*/
+
+section#o-mnie
+{
+    width: 100%; 
+    background-color: #fff;   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;;
+    position: relative;
+    top: 120px;
+}
+
+section#o-mnie div#zdjecie
+{
+    width: 30vw;
+    height: 30vw;
+    background-image: linear-gradient(grey,green);
+    border-radius: 15vw;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section#o-mnie p:nth-child(2)
+{
+    font-size: 45px;
+    font-weight: bold;
+    margin-top: 3vw;
+    text-align: center;
+}
+
+section#o-mnie p:nth-child(3)
+{
+    font-size: 30px;
+    margin-top: 1.5vw;    
+}
+
+section#o-mnie p:nth-child(4), p:nth-child(6), p:nth-child(8), p:nth-child(10)
+{
+    text-align: justify;
+    padding: 1.5vw;
+    line-height: 40px;
+        
+}
+
+section#o-mnie p:nth-child(4)::before, p:nth-child(6)::before, p:nth-child(8)::before, p:nth-child(10)::before
+{
+    content:".  ";
+    opacity: 0;
+}
+
+section#o-mnie h3
+{
+    margin: 15px;
+}
+
+
+/*@media all and (max-width: 992px)
+{
+    section#o-mnie div#pole
+    {
+        width: 50%;    
+        display: block;
+        height: fit-content;
+    }
+    
+    section#o-mnie div#niebieski, div#zielony, div#czerwony, div#fioletowy, div#zolty
+    {
+        display: block;
+    }
+}*/
+
+/*----------------------------styl formularza---------------------------------*/
+section#kontakt
+{
+    width: 100%;
+    height: 100%;
+    height: min-content;
+    background-color: #fff; 
+    min-height: 620px;
+    position: relative;
+    top: 120px;
+}
+
+section#kontakt h2
+{
+    color: rgb(0,36,96);
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase; 
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+section#kontakt form
+{
+    width: 100%;  
+}
+
+section#kontakt form input, textarea
+{
+    display: block;
+    width: 96%;
+    font-size: 15px;
+    margin: 2vh 2vw 2vh 2vw;
+    padding: 2vh 2vw 2vh 2vw;
+    font-size: 30px;
+}
+
+section#kontakt form textarea
+{
+    resize: none;
+}
+
+section#kontakt div
+{
+    text-align: center;
+}
+
+section#kontakt button
+{   
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 5px; 
+    margin-top: 30px;
+    background-image: linear-gradient(rgb(171,205,204), rgb(112,173,71));  
+    border: none;
+    box-shadow: 4px 4px 6px;
+    color: rgb(41,72,127);
+    text-transform: uppercase; 
+    font-weight: bold;
+}
+
+section#kontakt span 
+{
+    display: block;
+    padding: 20px;
+}
+
+section#kontakt span input
+{
+    display: inline;
+    margin: 0;
+    width: 40px;
+}
+
+section#kontakt div h4
+{
+    margin-top: 4vh;
+    color: rgb(0,32,96);
+}
+
+/*----------------------------styl footera------------------------------------*/
+footer
+{
+    width: 100%;
+    background-color: #000;
+    text-align: center;
+    height: 80px; 
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;  
+    color: #fff;  
+    position: fixed;
+    bottom: 0;
+}
+
+footer a
+{
+    display: block;
+    height: 100%;
+}
+
+footer a img
+{
+    height: 100%;
+}
