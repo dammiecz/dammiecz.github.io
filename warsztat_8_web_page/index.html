@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Forma - fitness and gym</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        
+<!--        MENU-->
+        <nav class="nav-menu">
+            <ul>                
+                <li>Zobacz wnętrze</li>
+                <li>Poznaj trenerów</li>
+                <li>Grafik zajęć</li>
+                <li>Cennik</li>
+                <li>Kontakt</li>
+            </ul>
+        </nav>
+        
+<!--        NAGLOWEK-->
+        <header class="header-style">
+            <h1>Forma</h1>
+            <span>Fitness and gym</span>
+            <hr>
+            <p>Witamy w, prawdopodobnie, najlepszej silowni w mieście!</p>
+        </header>
+        
+<!--        GALERIA-->
+        <section id="galeria" class="galeria">
+            <header>
+                <h2>Galeria</h2>
+                <hr>
+                <h3>Zobacz wnętrze i nasz sprzęt</h3> 
+                <button id="galeria-info">Zobacz</button>
+            </header>            
+            <aside>
+                <div class="galeria-style">
+                    <img src="img/gym1.jpg" alt="ania">                                      
+                </div>
+                <div class="galeria-style">
+                    <img src="img/gym2.jpg" alt="bartek">
+                </div>
+                <div class="galeria-style">
+                    <img src="img/gym3.jpg" alt="bartek">
+                </div>
+                <div class="galeria-style">
+                    <img src="img/gym4.jpg" alt="bartek">
+                </div>
+                <div class="galeria-style">
+                    <img src="img/gym5.jpg" alt="bartek">
+                </div>                             
+                <button id="next-photo">></button>
+                <button id="prev-photo"><</button>
+                <button id="exit-gallery">X</button>
+            </aside>
+        </section>
+        
+<!--        TRENERZY-->
+        <section id="trenerzy" class="trenerzy">
+            <header>
+                <h2>Trenerzy i trenerki</h2>
+                <hr>
+                <h3>Poznaj naszych trenerów i nasze trenerki</h3>
+                <button id="trener-info">poznaj</button>
+            </header>            
+            <aside>
+                <div id="ania" class="trener-style">
+                    <img src="img/ania.jpg" alt="ania">
+                    <h4>Ania<br>Nowak</h4>
+                    <p>ANIA ipsum dolor sit amet, consectetur adipisicing elit. Eius, cum, odio, nihil, consequatur est quibusdam esse dolorem velit iste eaque distinctio suscipit dignissimos commodi perferendis reiciendis saepe sint laborum modi.</p>                    
+                </div>
+                <div id="bartek" class="trener-style">
+                    <img src="img/bartek.jpg" alt="bartek">
+                    <h4>Bartek<br>Kowalski</h4>
+                    <p>BARTEK ipsum dolor sit amet, consectetur adipisicing elit. Eius, cum, odio, nihil, consequatur est quibusdam esse dolorem velit iste eaque distinctio suscipit dignissimos commodi perferendis reiciendis saepe sint laborum modi.</p>
+                    
+                </div>
+                <div id="kasia" class="trener-style">
+                    <img src="img/kasia.jpg" alt="kasia">
+                    <h4>Kasia<br>Poniatowska</h4>
+                    <p>KASIA ipsum dolor sit amet, consectetur adipisicing elit. Eius, cum, odio, nihil, consequatur est quibusdam esse dolorem velit iste eaque distinctio suscipit dignissimos commodi perferendis reiciendis saepe sint laborum modi.</p>
+                </div>
+                <div id="dawid" class="trener-style">
+                    <img src="img/dawid.jpg" alt="dawid">
+                    <h4>Dawid<br>Janowski</h4>
+                    <p>DAWID ipsum dolor sit amet, consectetur adipisicing elit. Eius, cum, odio, nihil, consequatur est quibusdam esse dolorem velit iste eaque distinctio suscipit dignissimos commodi perferendis reiciendis saepe sint laborum modi.</p>
+                </div>
+                <div id="ola" class="trener-style">
+                    <img src="img/ola.jpg" alt="ola">
+                    <h4>Ola<br>Szyszka</h4>
+                    <p>OLA ipsum dolor sit amet, consectetur adipisicing elit. Eius, cum, odio, nihil, consequatur est quibusdam esse dolorem velit iste eaque distinctio suscipit dignissimos commodi perferendis reiciendis saepe sint laborum modi.</p>
+                </div>
+                <button id="next">></button>
+                <button id="prev"><</button>
+                <button id="exit">X</button>
+            </aside>
+        </section>
+        
+<!--        GRAFIK-->
+        <section id="grafik" class="grafik">
+            <header>
+                <h2>Grafik zajęć</h2>
+                <hr>                
+                <button id="grafik-info">Rozwiń</button>
+            </header>    
+            <table>
+                <tr>
+                    <th>Godzina</th>
+                    <th>Poniedzialek</th>
+                    <th>Wtorek</th>
+                    <th>Środa</th>
+                    <th>Czwartek</th>
+                    <th>Piątek</th>
+                    <th>Sobota</th>                    
+                </tr>
+                <tr>
+                    <td>8:00</td>
+                    <td>Cross training</td>
+                    <td>Tabata</td>
+                    <td>TRX</td>
+                    <td>Cross training</td>
+                    <td>Aktywny poranek</td>
+                    <td></td>                    
+                </tr>
+                <tr>
+                    <td>9:00</td>
+                    <td>Aktywna mama</td>
+                    <td>Karate</td>
+                    <td>Street Workout</td>
+                    <td>Power Pump</td>
+                    <td>Joga</td>
+                    <td>Pilates</td>                    
+                </tr>
+                <tr>
+                    <td>10:00</td>
+                    <td>Gimnastyka (dzieci 5-7lat)</td>
+                    <td>Boks</td>
+                    <td>Corss Training</td>
+                    <td>TRX</td>
+                    <td>Tabata</td>
+                    <td>Gimnastyka (dzieci 8-12lat)</td>                    
+                </tr>
+                <tr>
+                    <td>11:00</td>
+                    <td>Aktywna mama</td>
+                    <td>Zdrowy kręgoslup</td>
+                    <td>Pilates</td>
+                    <td>Joga</td>
+                    <td>Karate</td>
+                    <td>Boks</td>                    
+                </tr>
+                <tr>
+                    <td>12:00</td>
+                    <td>Power Pump</td>
+                    <td></td>
+                    <td>Kalistenika</td>
+                    <td></td>
+                    <td>Boks</td>
+                    <td>Tabata</td>                    
+                </tr>
+                <tr>
+                    <td>13:00</td>
+                    <td></td>
+                    <td>Power Bar</td>
+                    <td></td>
+                    <td></td>
+                    <td>TRX</td>
+                    <td>Cross Training</td>                    
+                </tr>     
+                <tr>
+                    <td>14:00</td>
+                    <td></td>
+                    <td></td>
+                    <td>Aktywna mama</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>                    
+                </tr>                
+                <tr>
+                    <td>15:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>                    
+                </tr>                
+                <tr>
+                    <td>16:00</td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td></td>                    
+                </tr>                
+                <tr>
+                    <td>17:00</td>
+                    <td>Aktywna mama</td>
+                    <td>Karate</td>
+                    <td>Street Workout</td>
+                    <td>Power Pump</td>
+                    <td>Joga</td>
+                    <td>Pilates</td>                         
+                </tr>                
+                <tr>
+                    <td>18:00</td>
+                    <td>Boks</td>
+                    <td>Stretching</td>                    
+                    <td>Kalistenika</td>
+                    <td>Cross Training</td>
+                    <td>TRX</td>
+                    <td>Tabata</td>                    
+                </tr>                
+                <tr>
+                    <td>19:00</td>
+                    <td>Power Pump</td>
+                    <td rowspan="3">Karate</td>
+                    <td>Street Workout</td>
+                    <td>Pilates</td>   
+                    <td>Aktywna mama</td>
+                    <td>Joga</td>         
+                </tr>                
+                <tr>
+                    <td>20:00</td>
+                    <td>Stretching</td>
+<!--                    <td>Karate</td>                    -->
+                    <td rowspan="3">Kalistenika</td>
+                    <td rowspan="2">Cross Training</td>
+                    <td rowspan="2">TRX</td>
+                    <td rowspan="2">Tabata</td>                             
+                </tr>                
+                <tr>
+                    <td>21:00</td>
+                    <td>Boks</td>
+<!--                    <td>Karate</td>                    -->
+<!--                    <td>Kalistenika</td>-->
+<!--                    <td>Cross Training</td>-->
+<!--                    <td>TRX</td>-->
+<!--                    <td>Tabata</td>                     -->
+                </tr>                
+                <tr>
+                    <td>22:00</td>
+                    <td>Joga</td>
+                    <td>Pilates</td>                    
+<!--                    <td>Kalistenika</td>-->
+                    <td>Power Pump</td>
+                    <td>Street Workout</td>
+                    <td>Stretching</td>                     
+                </tr>               
+                
+            </table>
+        </section>
+        
+<!--            CENNIK-->
+        <section id="cennik" class="cennik">
+            <h2>Sprawdź naszą ofertę i ceny</h2>
+            <div>
+                <div class="kartaCeny">
+                    <span>75</span>
+                    <h3>Student</h3>
+                    <div><img src="ico/kalendarz.png" alt="kalendarz">30 dni</div>
+                    <div><img src="ico/open.png" alt="kluby">wszystkie kluby</div>
+                    <div><img src="ico/zegar.png" alt="zegar">bez limitu czasu</div>
+                </div>
+            </div>
+            <div>
+                <div class="kartaCeny">
+                    <span>120</span>
+                    <h3>Regular</h3>
+                    <div><img src="ico/kalendarz.png" alt="kalendarz">30 dni</div>
+                    <div><img src="ico/open.png" alt="kluby">wszystkie kluby</div>
+                    <div><img src="ico/zegar.png" alt="zegar">bez limitu czasu</div>
+                </div>
+            </div>
+            <div>
+                <div class="kartaCeny">
+                    <span>55</span>
+                    <h3>Senior</h3>
+                    <div><img src="ico/kalendarz.png" alt="kalendarz">30 dni</div>
+                    <div><img src="ico/open.png" alt="kluby">wszystkie kluby</div>
+                    <div><img src="ico/zegar.png" alt="zegar">bez limitu czasu</div>
+                </div>
+            </div>
+            <div>
+                <div class="kartaCeny">
+                    <span>30</span>
+                    <h3>Wejściówka</h3>
+                    <div><img src="ico/kalendarz.png" alt="kalendarz">1 dzień</div>
+                    <div><img src="ico/open.png" alt="kluby">1 klub</div>
+                    <div><img src="ico/zegar.png" alt="zegar">bez limitu czasu</div>
+                </div>
+            </div>
+        </section>
+
+<!--        KONTAKT-->
+        <section id="kontakt" class="kontakt">
+            <header>
+                <h2>Kontakt</h2>
+                <hr>               
+            </header>  
+            <form method="POST" action="">
+                <h4>Formularz kontaktowy</h4>
+                <input type="text" id="imie">
+                <label for="imie">Imię</label>
+                <input type="text" id="nazwisko">
+                <label for="nazwisko">Nazwisko</label>
+                <input type="tel" id="telefon">
+                <label for="telefon">Telefon</label>
+                <input type="email" id="email">
+                <label for="email">E-mail</label>                
+                <textarea placeholder="Wpisz treść wiadomości..."></textarea>
+                <label for="zgoda">Wyrażam zgodę na przetwarzanie danych osobowych</label>
+                <input type="checkbox" id="zgoda">
+                <button id="wyslij-formularz">Wyślij</button>
+            </form>  
+            <div class="social">
+                <a href="facebook.pl"><img src="ico/f.png" alt="facebook">facebook</a>
+                <a href="youtube.com"> <img src="ico/tube.png" alt="youtube">you tube</a>
+                <a href="instagram.com"><img src="ico/inst.png" alt="instagram">instagram</a>
+            </div>
+            <address>
+                <span>Forma<br>Fitness and Gym</span><br>
+                ul. Kolejowa 10<br>
+                03-123 Kijowice Górnośląskie
+            </address>
+            <span class="tel-mail"><img src="ico/tel.png" alt="facebook">(+48) 123 345 789</span>
+            <span class="tel-mail"><img src="ico/mail.png" alt="email">kontakt@forma.com.pl</span>
+        </section>
+        
+<!--        STOPKA-->
+        <footer>
+            <span>Studio Program<span style="color:red">Off</span><span style="color:green">On</span> @2019</span>
+        </footer>
+        
+        <script type="text/javascript" src="script.js"></script>
+        
+    </body>
+</html>

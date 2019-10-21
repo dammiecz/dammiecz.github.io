@@ -1,0 +1,813 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 0px;
+}
+
+/*---------------------------------------------------------MENU*/
+
+nav.nav-menu
+{
+    width: 100%;
+    position: fixed;
+    text-align: center;
+    background-color: #dfa943;
+    z-index: 1;
+}
+
+nav.nav-menu ul li
+{
+    display: inline-block;
+    padding: 12px;
+    text-transform: uppercase;
+    background-color: #dfa943;
+    font-size: 18px;
+    transition: opacity 0.3s ease, background-color 0.3s ease;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+nav.nav-menu ul li:hover
+{
+    cursor: pointer;
+    background-color: #9a8711;
+    opacity: 0.5;
+}
+
+@media all and (max-width: 992px)
+{
+    nav.nav-menu
+    {
+        position: static;
+    }
+    
+    nav.nav-menu ul li
+    {
+        display: block;
+    }
+}
+
+/*---------------------------------------------------------HEDAER*/
+
+header.header-style
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/header.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff; 
+    text-shadow: 0px 0px 10px #000;
+}
+
+header.header-style h1
+{
+    font-size: 60px;
+    text-transform: uppercase;
+    height: 40%;
+    display: flex;
+    align-items: flex-end;    
+}
+
+header.header-style span
+{
+    font-size: 40px;
+    text-transform: uppercase;
+    height: 20%;
+}
+
+header.header-style hr
+{
+    color: #fff;
+    border: 1px;
+}
+
+header.header-style p
+{
+    font-size: 28px;
+    text-transform: uppercase;
+    height: 40%;
+    text-align: center;
+}
+
+/*---------------------------------------------------------GALERIA*/
+
+section.galeria header
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/wnetrze.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+}
+
+section.galeria header h2
+{
+    font-size: 40px;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+section.galeria header h3
+{
+    font-size: 20px;
+}
+
+section.galeria header button
+{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    box-shadow: 0 0 10px #9a8711;
+    background-image: linear-gradient(#9a8711, #fff);
+    display: block;    
+    margin-top: 20px;
+    transition: opacity 0.4s ease, box-shadow 0.4s ease;
+}
+
+section.galeria header button:hover
+{
+    box-shadow: 0 0 20px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+section.galeria header button:focus
+{
+    outline: none;
+}
+
+section.galeria header button:active
+{    
+    width: 0;
+    height: 0;
+    font-size: 0;    
+}
+
+section.galeria aside
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0,0,0,0.7);
+}
+
+div.galeria-style
+{
+    display: none; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 515px;
+    height: 349px;
+    padding: 30px;    
+}
+
+div.galeria-style img
+{
+    width: 100%;
+}
+
+section.galeria aside button
+{
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    padding: 5px;
+    position: relative;
+    display: block;
+    transition: opacity 0.2s ease;
+    border: none;
+    outline: none;
+}
+
+section.galeria aside button:hover
+{
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+section.galeria aside button#exit-gallery
+{
+    left: -70px;
+    top: -150px;
+    background-image: linear-gradient(#9a8711, #fff);   
+}
+
+section.galeria aside button#next-photo
+{
+    top: 20px;
+    left: -25px;
+    background-image: linear-gradient(#9a8711, #fff);
+}
+
+section.galeria aside button#prev-photo
+{
+    top: 20px;
+    left: -535px;
+    background-image: linear-gradient(#9a8711, #fff);
+}
+
+@media all and (max-width: 768px)
+{    
+    div.galeria-style
+    {
+        width: 100%;
+        height: 100vh;
+        align-items: center;  
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: nowrap;        
+    }    
+    
+    div.galeria-style img
+    {
+        margin: 0;
+    }
+    
+    aside button#exit-gallery
+    {
+        position: fixed;
+        left: 93vw;
+        top: 0;
+        
+    }
+
+    section.galeria aside button#next-photo
+    {
+        position: fixed;
+        top: 90vh;
+        left: 93vw;
+        height: 20px;
+        
+    }
+
+    section.galeria aside button#prev-photo
+    {
+        position: fixed;
+        top: 90vh;
+        left: 0;
+        height: 20px;
+        
+    }
+}
+
+
+/*---------------------------------------------------------TRENERZY*/
+section.trenerzy header
+{
+    width: 100%;
+    height: 100vh;
+    background-image: url('img/trener.jpg');
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px #000;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section.trenerzy header h2
+{
+    font-size: 40px;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+section.trenerzy header h3
+{
+    font-size: 20px;
+}
+
+section.trenerzy header button
+{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    box-shadow: 0 0 10px #9a8711;
+    background-image: linear-gradient(#9a8711, #fff);
+    display: block;    
+    margin-top: 20px;
+    transition: opacity 0.4s ease, box-shadow 0.4s ease;
+}
+
+section.trenerzy header button:hover
+{
+    box-shadow: 0 0 20px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+section.trenerzy header button:focus
+{
+    outline: none;
+}
+
+section.trenerzy header button:active
+{    
+    width: 0;
+    height: 0;
+    font-size: 0;    
+}
+
+section.trenerzy aside
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+div.trener-style
+{
+    display: none; 
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 800px;
+    height: 350px;
+    padding: 30px;
+    background-image: linear-gradient(#9a8711, #fff);
+    box-shadow: 0 0 30px #9a8711;
+}
+
+div.trener-style img
+{
+    width: 250px;
+    height: 200px;
+    margin: 0px 20px 20px 0px;
+}
+
+div.trener-style h4
+{
+    color: #000;
+    font-size: 25px;
+}
+
+div.trener-style p
+{
+    color: #000;
+    font-size: 18px;
+}
+
+aside button
+{
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    padding: 5px;
+    position: relative;
+    display: block;
+    transition: opacity 0.2s ease;
+    border: none;
+    outline: none;
+}
+
+aside button:hover
+{
+    opacity: 0.2;
+    cursor: pointer;
+}
+
+aside button#exit
+{
+    left: -70px;
+    top: -155px;
+    background-color: rgba(154, 135, 17, 0);
+}
+
+aside button#next
+{
+    top: 155px;
+    left: -25px;
+    background-color: rgba(154, 135, 17, 0);
+}
+
+aside button#prev
+{
+    top: 155px;
+    left: -820px;
+    background-color: rgba(154, 135, 17, 0);
+}
+
+@media all and (max-width: 768px)
+{    
+    div.trener-style
+    {
+        width: 100%;
+        height: 100vh;
+        align-items: center;  
+        text-align: center;
+        flex-direction: column;
+        flex-wrap: nowrap;        
+    }    
+    
+    div.trener-style img
+    {
+        margin: 0;
+    }
+    
+    div.trener-style p
+    {
+        margin-top: 20px;
+    }
+    
+    aside button#exit
+    {
+        position: fixed;
+        left: 93vw;
+        top: 0;
+    }
+
+    aside button#next
+    {
+        position: fixed;
+        top: 90vh;
+        left: 93vw;
+        height: 20px;
+    }
+
+    aside button#prev
+    {
+        position: fixed;
+        top: 90vh;
+        left: 0;
+        height: 20px;
+    }
+}
+
+/*---------------------------------------------------------GRAFIK*/
+section.grafik h2
+{
+    font-size: 40px;
+    text-align: center;
+    padding: 30px;
+}
+
+section.grafik header button
+{
+    font-size: 20px;
+    text-transform: uppercase;
+    padding: 10px;
+    box-shadow: 0 0 10px #9a8711;
+    background-image: linear-gradient(#9a8711, #fff);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;    
+    transition: opacity 0.4s ease, box-shadow 0.4s ease;
+}
+
+section.grafik header button:hover
+{
+    box-shadow: 0 0 20px;
+    opacity: 0.6;
+    cursor: pointer;
+}
+
+section.grafik header button:focus
+{
+    outline: none;
+}
+
+section.grafik table
+{       
+    display: block;  
+    height: 0;
+    width: 100%;
+    color: #000;   
+    text-align: left;
+    overflow: hidden;    
+    margin: 30px 0 30px 0;
+}
+
+section.grafik table tr th, td
+{    
+    font-size: 16px;      
+    border: 0.5px solid #000; 
+}
+
+section.grafik table tr td:nth-of-type(1)
+{
+    width: 5vw;
+}
+
+section.grafik table tr td:nth-of-type(1n+2)
+{
+    width: 15.8vw;
+}
+
+/*---------------------------------------------------------CENNIK*/
+section.cennik
+{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+section.cennik div
+{    
+    flex-basis: 25%; 
+}
+
+section.cennik h2
+{
+    text-align: center;
+    font-size: 40px;
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+section.cennik div div.kartaCeny
+{    
+    display: block;
+    height: 250px;
+    width: 200px; 
+    border-radius: 50px;
+    box-shadow: 0 0 15px #000;
+    background-image: linear-gradient(#9a8711, #fff);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+section.cennik div.kartaCeny span
+{
+    display: block;
+    font-size: 70px; 
+    text-align: center;
+}
+
+section.cennik div.kartaCeny span::after
+{
+    content: 'zl';
+    font-size: 45px;
+}
+
+section.cennik div.kartaCeny h3
+{
+    font-size: 25px;  
+    text-align: center;
+    text-transform: uppercase;
+}
+
+section.cennik div.kartaCeny div
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 15px;
+    padding: 0px 10px 10px 15px;
+    text-transform: uppercase;
+}
+
+section.cennik div.kartaCeny div img
+{
+    height: 35px;
+}
+
+@media all and (max-width:992px)
+{
+    section.cennik div
+    {
+        flex-basis: 50%;
+        
+    }
+    
+    section.cennik div.kartaCeny
+    {
+        margin-bottom: 30px;
+    }
+}
+
+/*---------------------------------------------------------KONTAKT*/
+section.kontakt
+{
+    background-color: #dfa943;   
+    height: min-content;
+    overflow: hidden;
+    margin-bottom: -500px;
+}
+
+section.kontakt h2
+{
+    font-size: 40px;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+section.kontakt form
+{
+    font-size: 20px;
+    width: 60vw;
+    color: #000;
+    display: block;
+    background-image: linear-gradient(#9a8711, #fff);
+    padding: 20px;   
+    margin-left: 30px;    
+}
+
+section.kontakt form h4
+{
+    color: #000;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 25px;
+}
+
+section.kontakt form label
+{
+    font-size: 20px;
+    width: 100%;
+    padding: 5px;
+    width: 50vw;
+    margin: auto 10px auto 10px;
+    text-align: center;
+}
+
+section.kontakt form input
+{
+    font-size: 20px;
+    padding: 5px;
+    display: block;   
+    border: none;
+    border-bottom: 2px solid #000;
+    margin: 10px auto 10px auto;  
+    width: 100%;
+    background-color: rgba(154, 135, 17, 0);
+}
+
+section.kontakt form input:focus
+{
+    outline: none;
+}
+
+section.kontakt form textarea
+{
+    font-size: 20px;
+    padding: 5px;
+    resize: none;
+    display: block;
+    width: 100%;
+    margin: 10px auto 10px auto;  
+}
+
+section.kontakt form button
+{
+    font-size: 20px;
+    padding: 10px;
+    background-color: rgba(114, 15, 17, 0.4);
+    border: none;
+}
+
+section.kontakt form button:hover
+{
+    box-shadow: 0 0 12px #000;
+    cursor: pointer;
+}
+
+section.kontakt form button:focus
+{
+    outline: none;
+}
+
+section.kontakt div.social
+{
+    position: relative;
+    left: 72.5vw;
+    top: -500px;
+    margin-bottom: 20px;
+}
+
+section.kontakt div.social a
+{
+    font-size: 20px;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;    
+    align-items: center;
+    text-transform: uppercase;
+    margin: 5px;
+    color: #000;
+    text-decoration: none;
+    transition: transform 1s ease;
+    width:fit-content;
+}
+
+section.kontakt div.social a:hover
+{
+    transform: rotateX(360deg);
+}
+
+section.kontakt div.social a img
+{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+section.kontakt address
+{
+    font-size: 20px;
+    color: #000;
+    position: relative;
+    left: 65vw;
+    top: -500px; 
+    margin-bottom: 30px;
+}
+
+section.kontakt address span
+{
+    font-size: 40px;
+    font-weight: bold;       
+    display: block;
+    width: fit-content;
+}
+
+section.kontakt span.tel-mail
+{
+    font-size: 25px;
+    font-weight: bold;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+    left: 65vw;
+    top: -500px;
+}
+
+@media all and (max-width: 1050px)
+{
+    section.kontakt
+    {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: auto;
+        text-align: center;
+    }
+    
+    section.kontakt form
+    {
+       margin: 0;
+       width: 100vw;
+    }
+    
+    section.kontakt div.social
+    {
+        position: static;
+    }
+    
+    section.kontakt address
+    {
+        position: static;
+    }
+    
+    section.kontakt span.tel-mail
+    {
+        position: static;
+    }
+}
+
+/*---------------------------------------------------------STOPKA*/
+footer 
+{    
+    background-color: #dfa943; 
+    text-align: center;
+    padding: 10px;
+}
+
+footer span
+{
+    font-size: 20px;    
+}
