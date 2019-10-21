@@ -15,3 +15,5 @@ dammiecz.github.io/warsztat_4_akordeon/index.html
 dammiecz.github.io/warsztat_5_menu_lista/index.html
 dammiecz.github.io/warsztat_6_menu/index.html
 dammiecz.github.io/warsztat_7_bank/index.html
+dammiecz.github.io/warsztat_8_web_page/index.html
+
