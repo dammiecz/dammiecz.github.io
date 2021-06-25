@@ -12,21 +12,19 @@ let popUpBox = document.getElementById("popUp");
     popUpBox.style.left = posX + "px";
     popUpBox.style.width = width + "px";
 
+    console.log(windowXsize,windowYsize,width,height);    
+
 const RegisterIn = () =>
-{
-    let height = 0.6*windowYsize;
-    let regForm = document.getElementById("regForm");  
-    let popUpBox = document.getElementById("popUpBox");  
+{        
+    let popUpBox = document.getElementById("popUp");  
         popUpBox.style.zIndex = 1;          
-        popUpBox.style.height = height +"px";        
-        popUpBox.style.transition = "height 1s ease"; 
-        regForm.style.visibility = "visible";     
-        regForm.style.visibility = "visible 1s 1s";      
+        popUpBox.style.height = 160 +"px";        
+        popUpBox.style.display = "block"; 
 }
 
 const ClosePopUp = () =>
 {
     let popUpBox = document.getElementById("popUp");       
-        popUpBox.style.visibility = "hidden";
+        popUpBox.style.display = "none"; 
         popUpBox.style.zIndex = -1;  
 }
