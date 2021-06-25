@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reem+Kufi&display=swap" rel="stylesheet">
+    
+    <title>Landing Page</title>
+</head>
+<body>   
+        <nav>
+            <ul>
+                <li>Home</li>
+                <li>Your Trip</li>
+                <li>Contact</li>
+            </ul>
+            <button id="register_btn" onclick="RegisterIn()">Register</button>
+            <button>Sign In</button>
+        </nav>
+        
+        <header>
+            <span>01</span>
+            <h1>Great Northern Lights</h1>              
+            <div id="vertical_line"></div>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga perferendis animi consequatur molestias repudiandae aliquid ullam iste dolore voluptate libero, eligendi beatae, delectus obcaecati aperiam ab quaerat ducimus. Impedit, hic?
+            Rem adipisci reprehenderit impedit, alias mollitia earum recusandae quasi fugiat modi quia ducimus repellat quae, accusantium minus vero amet unde ad repudiandae dolor. Eligendi enim architecto accusantium deserunt voluptates nostrum.</p>    
+            <div id="horizontal_line"></div>
+        </header>
+
+        <aside>   
+            <form id="form_dest" method="get">
+                <h4>Search your perfect destination</h4>
+                
+                <label for="place">Location</label>
+                <input name="place" type="text" placeholder="Place heare your perfect palce">
+                
+                <label for="a_date">Arrival</label>    
+                <label for="d_date">Departure</label>        
+                <input name="a_date" type="date">
+                <input name="d_date" type="date">
+                
+                <label for="guest_number">Guest number</label>
+                <select name="guest_number">
+                    <option value="1">One people</option>
+                    <option value="2">Couple</option>
+                    <option value="3">More than 2</option>
+                    <option value="4">Family - 2 adoults + children younger than 3 years old</option>
+                </select>
+                <button id="submit_btn" type="submit" value="submit" form="form_dest">Search</button>
+            </form>
+        </aside>             
+        
+        <footer>            
+            <a href="https:\\www.facebook.com" target="blank"><img src="facebook.png"></a>
+            <a href="https:\\www.twitter.com" target="blank"><img src="twitter.png"></a>
+            <a href="https:\\www.instagram.com" target="blank"><img src="instagram.png"></a>  
+        </footer>    
+        
+        <section name="form_register" id="popUp">
+            <form id="regForm" method="get">
+                <input type="email" placeholder="Type your e-mail">
+                <input type="password" placeholder="Type your password">
+                <button id="register_btn" type="submit" value="submit" form="form_register">Register</button>
+                <button onclick="ClosePopUp()">Cancel</button>
+            </form>
+        </section>
+
+        <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
