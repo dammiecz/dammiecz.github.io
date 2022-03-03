@@ -1,0 +1,60 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body
+{
+    width: 100vw;  
+    color: white; 
+    background-color: rgb(122, 97, 212); 
+}
+
+.header
+{
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;    
+}
+
+h1
+{
+    font-size: 40px;
+}
+
+h2
+{
+    font-size: 20px;
+}
+
+#mainSectionId
+{
+    width: 100%;
+    display: flex;    
+}
+
+.sectionClass
+{
+    flex-basis: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+h3
+{
+    text-transform: uppercase; 
+}
+
+.inputClass
+{
+    width: 25%;
+    height: 20px;
+}
+
+/* .submitBtnClass
+{
+    width: 20%;
+    height: 20px;
+} */
