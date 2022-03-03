@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Kalkulator wydatków</title>
+</head>
+<body>
+    <h1 class="header">Kalkulator wydatków</h1>
+    <h2 class="header">Pozostało jeszcze<div id="cashLeft"></div></h2>
+    <section id="mainSectionId">
+        <section id="incomeSectionId" class="sectionClass">
+            <h3>Przychody</h3>
+            <input id="nameIncomeInp" placeholder="Nazwa" type="text" class="inputClass">
+            <input id="sumIncomeInp" placeholder="Wartość" type="number" class="inputClass">
+            <button id="addIncomeBtn" class="submitBtnClass">Dodaj</button>
+            <ul id="incomeUl"></ul>
+            <span>Suma przychodów:<div id="incomeSum"></div></span>
+        </section>
+        <section id="outcomeSectionId" class="sectionClass">
+            <h3>Wydatki</h3>
+            <input id="nameOutcomeInp" placeholder="Nazwa" type="text" class="inputClass">
+            <input id="sumOutcomeInp" placeholder="Wartość" type="number" class="inputClass">
+            <button id="addOutcomeBtn" class="submitBtnClass">Dodaj</button>
+            <ul id="outcomeUl"></ul>
+            <span>Suma wydatków:<div id="outcomeSum"></div></span>
+        </section>
+    </section>      
+    <ul></ul>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>
